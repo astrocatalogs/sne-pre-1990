@@ -3,7 +3,8 @@
 		"name":"SN1868A",
 		"aliases":[
 			"SN1868A",
-			"G001.9+00.3"
+			"G001.9+00.3",
+			"MWSNR 001.9+00.3"
 		],
 		"sources":[
 			{
@@ -16,12 +17,34 @@
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
 				"alias":"2",
 				"secondary":true
+			},
+			{
+				"name":"Chakraborti, Childs, & Soderberg (2016)",
+				"url":"http://adsabs.harvard.edu/abs/2016ApJ...819...37C",
+				"bibcode":"2016ApJ...819...37C",
+				"alias":"3"
+			},
+			{
+				"name":"Green (2014)",
+				"url":"http://adsabs.harvard.edu/abs/2014BASI...42...47G",
+				"bibcode":"2014BASI...42...47G",
+				"alias":"4"
+			},
+			{
+				"name":"Galactic SNRs",
+				"url":"https://www.mrao.cam.ac.uk/surveys/snrs/snrs.data.html",
+				"alias":"5"
 			}
 		],
 		"dec":[
 			{
 				"value":"-27:09:00.0",
 				"source":"1,2",
+				"unit":"degrees"
+			},
+			{
+				"value":"-27:10",
+				"source":"4,5",
 				"unit":"degrees"
 			}
 		],
@@ -34,13 +57,26 @@
 		"host":[
 			{
 				"value":"Milky Way",
-				"source":"1,2"
+				"source":"1,2,4,5"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"1899",
+				"error":"9",
+				"source":"3",
+				"unit":"yr"
 			}
 		],
 		"ra":[
 			{
 				"value":"07:48:42.0",
 				"source":"1,2",
+				"unit":"hours"
+			},
+			{
+				"value":"17:48:45",
+				"source":"4,5",
 				"unit":"hours"
 			}
 		]
