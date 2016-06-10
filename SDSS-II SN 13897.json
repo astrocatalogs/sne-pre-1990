@@ -3,10 +3,12 @@
 		"name":"SDSS-II SN 13897",
 		"sources":[
 			{
-				"name":"NED-D",
-				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
+				"name":"SIMBAD astronomical database",
+				"url":"http://simbad.u-strasbg.fr/",
+				"bibcode":"2000A&AS..143....9W",
 				"alias":"1",
-				"secondary":true
+				"secondary":true,
+				"reference":"Wenger et al. (2000)"
 			},
 			{
 				"name":"2011ApJ...738..162S",
@@ -15,16 +17,34 @@
 				"reference":"Sako et al. (2011)"
 			},
 			{
+				"name":"2012ApJ...755..125G",
+				"bibcode":"2012ApJ...755..125G",
+				"alias":"3",
+				"reference":"Galbany et al. (2012)"
+			},
+			{
+				"name":"NED-D",
+				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
+				"alias":"4",
+				"secondary":true
+			},
+			{
 				"name":"2014arXiv1401.3317S",
 				"bibcode":"2014arXiv1401.3317S",
-				"alias":"3",
+				"alias":"5",
 				"reference":"Sako et al. (2014)"
+			},
+			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"alias":"6",
+				"reference":"Schlafly & Finkbeiner (2011)"
 			},
 			{
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"4",
+				"alias":"7",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
 			}
@@ -32,51 +52,91 @@
 		"alias":[
 			{
 				"value":"SDSS-II SN 13897",
-				"source":"1"
+				"source":"1,2,4"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"1,3,3,2",
+				"probability":"1.0"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"901",
-				"source":"2,1",
+				"source":"2,4",
 				"unit":"Mpc"
 			},
 			{
 				"value":"979",
-				"source":"3,1",
+				"source":"5,4",
 				"unit":"Mpc"
 			},
 			{
 				"value":"987",
-				"source":"3,1",
+				"source":"5,4",
 				"unit":"Mpc"
+			}
+		],
+		"dec":[
+			{
+				"value":"-00:01:34.22",
+				"source":"1,2",
+				"unit":"degrees"
+			},
+			{
+				"value":"-00:01:34.2228",
+				"source":"2",
+				"unit":"floatdegrees"
+			}
+		],
+		"ebv":[
+			{
+				"value":"0.0235",
+				"error":"0.0013",
+				"source":"6"
 			}
 		],
 		"lumdist":[
 			{
-				"value":"1100",
-				"source":"4",
+				"value":"1230",
+				"source":"7",
+				"kind":"photometric",
 				"unit":"Mpc"
+			}
+		],
+		"ra":[
+			{
+				"value":"00:24:37.562",
+				"source":"1,2",
+				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
+				"value":"0.238",
+				"source":"2",
+				"kind":"photometric"
+			},
+			{
 				"value":"0.215",
-				"source":"2,1"
+				"source":"2,4"
 			},
 			{
 				"value":"0.234",
-				"source":"3,1"
+				"source":"5,4"
 			},
 			{
 				"value":"0.236",
-				"source":"3,1"
+				"source":"5,4"
 			}
 		],
 		"velocity":[
 			{
-				"value":"57700",
-				"source":"4",
+				"value":"63000",
+				"source":"7",
+				"kind":"photometric",
 				"unit":"km/s"
 			}
 		]

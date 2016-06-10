@@ -3,7 +3,8 @@
 		"name":"SDSS-II SN 10045",
 		"sources":[
 			{
-				"name":"2000A&AS..143....9W",
+				"name":"SIMBAD astronomical database",
+				"url":"http://simbad.u-strasbg.fr/",
 				"bibcode":"2000A&AS..143....9W",
 				"alias":"1",
 				"secondary":true,
@@ -16,22 +17,22 @@
 				"reference":"Zheng et al. (2008)"
 			},
 			{
+				"name":"2011ApJ...738..162S",
+				"bibcode":"2011ApJ...738..162S",
+				"alias":"3",
+				"reference":"Sako et al. (2011)"
+			},
+			{
 				"name":"NED-D",
 				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
-				"alias":"3",
+				"alias":"4",
 				"secondary":true
 			},
 			{
 				"name":"2014arXiv1401.3317S",
 				"bibcode":"2014arXiv1401.3317S",
-				"alias":"4",
-				"reference":"Sako et al. (2014)"
-			},
-			{
-				"name":"2011ApJ...738..162S",
-				"bibcode":"2011ApJ...738..162S",
 				"alias":"5",
-				"reference":"Sako et al. (2011)"
+				"reference":"Sako et al. (2014)"
 			},
 			{
 				"name":"2011ApJ...737..103S",
@@ -51,23 +52,30 @@
 		"alias":[
 			{
 				"value":"SDSS-II SN 10045",
-				"source":"1,3"
+				"source":"1,3,4"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"3",
+				"probability":"0.996"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"707",
-				"source":"4,3",
+				"source":"5,4",
 				"unit":"Mpc"
 			},
 			{
 				"value":"717",
-				"source":"4,3",
+				"source":"5,4",
 				"unit":"Mpc"
 			},
 			{
 				"value":"1190",
-				"source":"5,3",
+				"source":"3,4",
 				"unit":"Mpc"
 			}
 		],
@@ -76,6 +84,11 @@
 				"value":"+01:12:41.2",
 				"source":"1,2",
 				"unit":"degrees"
+			},
+			{
+				"value":"+01:12:41.22",
+				"source":"3",
+				"unit":"floatdegrees"
 			}
 		],
 		"ebv":[
@@ -97,20 +110,25 @@
 				"value":"21:48:46.84",
 				"source":"1,2",
 				"unit":"hours"
+			},
+			{
+				"value":"21:48:46.8",
+				"source":"3",
+				"unit":"floatdegrees"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.166",
-				"source":"4,3"
+				"source":"5,4"
 			},
 			{
 				"value":"0.169",
-				"source":"4,3"
+				"source":"5,4"
 			},
 			{
 				"value":"0.289",
-				"source":"5,3"
+				"source":"3,4"
 			}
 		],
 		"velocity":[

@@ -3,7 +3,8 @@
 		"name":"SDSS-II SN 8216",
 		"sources":[
 			{
-				"name":"2000A&AS..143....9W",
+				"name":"SIMBAD astronomical database",
+				"url":"http://simbad.u-strasbg.fr/",
 				"bibcode":"2000A&AS..143....9W",
 				"alias":"1",
 				"secondary":true,
@@ -20,12 +21,34 @@
 				"bibcode":"2011ApJ...737..103S",
 				"alias":"3",
 				"reference":"Schlafly & Finkbeiner (2011)"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"url":"https://sne.space",
+				"bibcode":"2016arXiv160501054G",
+				"alias":"4",
+				"secondary":true,
+				"reference":"Guillochon, Parrent, & Margutti (2016)"
 			}
 		],
 		"alias":[
 			{
 				"value":"SDSS-II SN 8216",
-				"source":"1"
+				"source":"1,2"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"2",
+				"probability":"1.0"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"508",
+				"source":"4",
+				"unit":"Mpc"
 			}
 		],
 		"dec":[
@@ -33,6 +56,11 @@
 				"value":"-00:03:07.91",
 				"source":"1,2",
 				"unit":"degrees"
+			},
+			{
+				"value":"-00:03:07.9092",
+				"source":"2",
+				"unit":"floatdegrees"
 			}
 		],
 		"ebv":[
@@ -42,11 +70,39 @@
 				"source":"3"
 			}
 		],
+		"lumdist":[
+			{
+				"value":"568",
+				"source":"4",
+				"kind":"photometric",
+				"unit":"Mpc"
+			}
+		],
 		"ra":[
 			{
 				"value":"22:05:04.677",
 				"source":"1,2",
 				"unit":"hours"
+			},
+			{
+				"value":"22:05:04.56",
+				"source":"2",
+				"unit":"floatdegrees"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.118",
+				"source":"2",
+				"kind":"photometric"
+			}
+		],
+		"velocity":[
+			{
+				"value":"33300",
+				"source":"4",
+				"kind":"photometric",
+				"unit":"km/s"
 			}
 		]
 	}
