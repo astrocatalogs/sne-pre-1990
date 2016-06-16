@@ -9,24 +9,36 @@
 				"reference":"Sako et al. (2011)"
 			},
 			{
+				"name":"NED-D",
+				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
+				"alias":"2",
+				"secondary":true
+			},
+			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"2",
+				"alias":"3",
 				"reference":"Schlafly & Finkbeiner (2011)"
 			},
 			{
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"3",
+				"alias":"4",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
+			},
+			{
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"alias":"5",
+				"reference":"Planck Collaboration et al. (2015)"
 			}
 		],
 		"alias":[
 			{
 				"value":"SDSS-II SN 5877",
-				"source":"1"
+				"source":"1,2"
 			}
 		],
 		"claimedtype":[
@@ -38,8 +50,8 @@
 		],
 		"comovingdist":[
 			{
-				"value":"1300",
-				"source":"3",
+				"value":"1150",
+				"source":"1,2",
 				"unit":"Mpc"
 			}
 		],
@@ -54,15 +66,16 @@
 			{
 				"value":"0.0604",
 				"error":"0.0016",
-				"source":"2"
+				"source":"3"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"1710",
-				"source":"3",
+				"source":"4,5,1",
 				"kind":"photometric",
-				"unit":"Mpc"
+				"unit":"Mpc",
+				"derived":true
 			}
 		],
 		"ra":[
@@ -77,14 +90,19 @@
 				"value":"0.317",
 				"source":"1",
 				"kind":"photometric"
+			},
+			{
+				"value":"0.278",
+				"source":"1,2"
 			}
 		],
 		"velocity":[
 			{
 				"value":"80500",
-				"source":"3",
+				"source":"4,1",
 				"kind":"photometric",
-				"unit":"km/s"
+				"unit":"km/s",
+				"derived":true
 			}
 		]
 	}

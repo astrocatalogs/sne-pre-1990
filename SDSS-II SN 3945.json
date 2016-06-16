@@ -23,30 +23,63 @@
 				"reference":"Dilday et al. (2010)"
 			},
 			{
+				"name":"NED-D",
+				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
+				"alias":"4",
+				"secondary":true
+			},
+			{
+				"name":"2014arXiv1401.3317S",
+				"bibcode":"2014arXiv1401.3317S",
+				"alias":"5",
+				"reference":"Sako et al. (2014)"
+			},
+			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"4",
+				"alias":"6",
 				"reference":"Schlafly & Finkbeiner (2011)"
 			},
 			{
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"5",
+				"alias":"7",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
+			},
+			{
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"alias":"8",
+				"reference":"Planck Collaboration et al. (2015)"
 			}
 		],
 		"alias":[
 			{
 				"value":"SDSS-II SN 3945",
-				"source":"1,3"
+				"source":"1,3,4"
 			}
 		],
 		"comovingdist":[
 			{
-				"value":"1100",
-				"source":"5",
+				"value":"1260",
+				"source":"5,4",
+				"unit":"Mpc"
+			},
+			{
+				"value":"1360",
+				"source":"5,4",
+				"unit":"Mpc"
+			},
+			{
+				"value":"1510",
+				"source":"2,4",
+				"unit":"Mpc"
+			},
+			{
+				"value":"1530",
+				"source":"2,4",
 				"unit":"Mpc"
 			}
 		],
@@ -66,15 +99,21 @@
 			{
 				"value":"0.0459",
 				"error":"0.0018",
-				"source":"4"
+				"source":"6"
+			}
+		],
+		"host":[
+			{
+				"value":"SDSS J230402.37-001659.2",
+				"source":"5,4,2"
 			}
 		],
 		"lumdist":[
 			{
-				"value":"1400",
-				"source":"5",
-				"kind":"heliocentric",
-				"unit":"Mpc"
+				"value":"1640",
+				"source":"7,8,5,4",
+				"unit":"Mpc",
+				"derived":true
 			}
 		],
 		"ra":[
@@ -91,17 +130,28 @@
 		],
 		"redshift":[
 			{
-				"value":"0.26",
-				"source":"3",
-				"kind":"heliocentric"
+				"value":"0.307",
+				"source":"5,4"
+			},
+			{
+				"value":"0.334",
+				"source":"5,4"
+			},
+			{
+				"value":"0.375",
+				"source":"2,4"
+			},
+			{
+				"value":"0.381",
+				"source":"2,4"
 			}
 		],
 		"velocity":[
 			{
-				"value":"68000",
-				"source":"5",
-				"kind":"heliocentric",
-				"unit":"km/s"
+				"value":"78400",
+				"source":"7,5,4",
+				"unit":"km/s",
+				"derived":true
 			}
 		]
 	}

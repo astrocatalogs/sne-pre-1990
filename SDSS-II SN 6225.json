@@ -17,30 +17,53 @@
 				"reference":"Dilday et al. (2010)"
 			},
 			{
+				"name":"NED-D",
+				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
+				"alias":"3",
+				"secondary":true
+			},
+			{
+				"name":"2014arXiv1401.3317S",
+				"bibcode":"2014arXiv1401.3317S",
+				"alias":"4",
+				"reference":"Sako et al. (2014)"
+			},
+			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"3",
+				"alias":"5",
 				"reference":"Schlafly & Finkbeiner (2011)"
 			},
 			{
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"4",
+				"alias":"6",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
+			},
+			{
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"alias":"7",
+				"reference":"Planck Collaboration et al. (2015)"
 			}
 		],
 		"alias":[
 			{
 				"value":"SDSS-II SN 6225",
-				"source":"1,2"
+				"source":"1,2,3"
 			}
 		],
 		"comovingdist":[
 			{
-				"value":"1360",
-				"source":"4",
+				"value":"1530",
+				"source":"4,3",
+				"unit":"Mpc"
+			},
+			{
+				"value":"1730",
+				"source":"4,3",
 				"unit":"Mpc"
 			}
 		],
@@ -60,15 +83,16 @@
 			{
 				"value":"0.0332",
 				"error":"0.0017",
-				"source":"3"
+				"source":"5"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"1810",
-				"source":"4",
+				"source":"6,7,2",
 				"kind":"heliocentric",
-				"unit":"Mpc"
+				"unit":"Mpc",
+				"derived":true
 			}
 		],
 		"ra":[
@@ -88,14 +112,23 @@
 				"value":"0.333",
 				"source":"2",
 				"kind":"heliocentric"
+			},
+			{
+				"value":"0.381",
+				"source":"4,3"
+			},
+			{
+				"value":"0.437",
+				"source":"4,3"
 			}
 		],
 		"velocity":[
 			{
 				"value":"83900",
-				"source":"4",
+				"source":"6,2",
 				"kind":"heliocentric",
-				"unit":"km/s"
+				"unit":"km/s",
+				"derived":true
 			}
 		]
 	}
