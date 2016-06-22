@@ -93,7 +93,7 @@
 		"alias":[
 			{
 				"value":"SN1920A",
-				"source":"1,5,6,2,7,8,9,10,11"
+				"source":"1,5,6,2,7,8,10,9,11"
 			}
 		],
 		"claimedtype":[
@@ -123,11 +123,11 @@
 			{
 				"value":"+28:28:31.44",
 				"source":"2",
-				"unit":"floatdegrees"
+				"unit":"degrees"
 			},
 			{
 				"value":"+28:28:30.0",
-				"source":"9,10",
+				"source":"10,9",
 				"unit":"degrees"
 			},
 			{
@@ -139,58 +139,75 @@
 		"discoverdate":[
 			{
 				"value":"1920/01/01",
-				"source":"8,9,10,11"
+				"source":"8,10,9,11"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Wolf",
-				"source":"7,9,10"
+				"source":"7,10,9"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0337",
 				"error":"0.0005",
-				"source":"13"
+				"source":"12,13",
+				"derived":true
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 2608",
-				"source":"7,8,9,10,11"
+				"source":"7,8,10,9,11"
 			}
 		],
 		"hostdec":[
 			{
 				"value":"+28:28:24.24",
 				"source":"2",
-				"unit":"floatdegrees"
+				"unit":"degrees"
 			},
 			{
 				"value":"+28:28:27",
 				"source":"7",
-				"unit":"nospace"
+				"unit":"degrees"
 			},
 			{
 				"value":"+28:28:24.4",
-				"source":"11"
+				"source":"11",
+				"unit":"degrees"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"24.65",
+				"source":"1,12,2",
+				"unit":"arcseconds",
+				"derived":true
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"3.808",
+				"source":"1,12,14,2"
 			}
 		],
 		"hostra":[
 			{
 				"value":"08:35:17.28",
 				"source":"2",
-				"unit":"floatdegrees"
+				"unit":"hours"
 			},
 			{
 				"value":"08:35:17",
 				"source":"7",
-				"unit":"nospace"
+				"unit":"hours"
 			},
 			{
 				"value":"08:35:17.30",
-				"source":"11"
+				"source":"11",
+				"unit":"hours"
 			}
 		],
 		"lumdist":[
@@ -205,20 +222,22 @@
 		"maxabsmag":[
 			{
 				"value":"-21",
-				"source":"12,11",
+				"source":"11,12",
 				"derived":true
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"10.4",
-				"source":"12,6,4"
+				"source":"12,4,6",
+				"derived":true
 			}
 		],
 		"maxband":[
 			{
 				"value":"pg",
-				"source":"12,6,4"
+				"source":"12,4,6",
+				"derived":true
 			}
 		],
 		"maxdate":[
@@ -236,11 +255,11 @@
 			{
 				"value":"08:35:15.84",
 				"source":"2",
-				"unit":"floatdegrees"
+				"unit":"hours"
 			},
 			{
 				"value":"08:35:16.3",
-				"source":"9,10",
+				"source":"10,9",
 				"unit":"hours"
 			},
 			{
@@ -269,91 +288,91 @@
 				"time":"22323.5",
 				"u_time":"MJD",
 				"magnitude":"11.8",
-				"source":"9,10"
+				"source":"10,9"
 			},
 			{
 				"time":"22324.0",
 				"u_time":"MJD",
 				"band":"pg",
 				"magnitude":"11.7",
-				"source":"5,4"
+				"source":"4,5"
 			},
 			{
 				"time":"22324.54999999981373548507690",
 				"u_time":"MJD",
 				"band":"pg",
 				"magnitude":"11.9",
-				"source":"5,4"
+				"source":"4,5"
 			},
 			{
 				"time":"22344.0",
 				"u_time":"MJD",
 				"band":"pg",
 				"magnitude":"11.9",
-				"source":"5,4"
+				"source":"4,5"
 			},
 			{
 				"time":"22351.0",
 				"u_time":"MJD",
 				"band":"pg",
 				"magnitude":"12.8",
-				"source":"5,4"
+				"source":"4,5"
 			},
 			{
 				"time":"22361.0",
 				"u_time":"MJD",
 				"band":"pg",
 				"magnitude":"12.5",
-				"source":"5,4"
+				"source":"4,5"
 			},
 			{
 				"time":"22362.0",
 				"u_time":"MJD",
 				"band":"pg",
 				"magnitude":"10.4",
-				"source":"6,4"
+				"source":"4,6"
 			},
 			{
 				"time":"22362.0",
 				"u_time":"MJD",
 				"band":"pg",
 				"magnitude":"12.8",
-				"source":"5,4"
+				"source":"4,5"
 			},
 			{
 				"time":"22363.0",
 				"u_time":"MJD",
 				"band":"pg",
 				"magnitude":"12.1",
-				"source":"5,4"
+				"source":"4,5"
 			},
 			{
 				"time":"22365.0",
 				"u_time":"MJD",
 				"band":"pg",
 				"magnitude":"10.6",
-				"source":"6,4"
+				"source":"4,6"
 			},
 			{
 				"time":"22366.0",
 				"u_time":"MJD",
 				"band":"pg",
 				"magnitude":"10.6",
-				"source":"6,4"
+				"source":"4,6"
 			},
 			{
 				"time":"22389.0",
 				"u_time":"MJD",
 				"band":"pg",
 				"magnitude":"13.7",
-				"source":"5,4"
+				"source":"4,5"
 			},
 			{
 				"time":"22389.0",
 				"u_time":"MJD",
 				"band":"pg",
 				"magnitude":"13.9",
-				"source":"5,4"
+				"source":"4,5"
 			}
 		]
 	}

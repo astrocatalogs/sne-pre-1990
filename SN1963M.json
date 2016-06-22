@@ -77,24 +77,24 @@
 				"reference":"Capaccioli et al. (1990)"
 			},
 			{
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"alias":"13",
+				"reference":"Planck Collaboration et al. (2015)"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"13",
+				"alias":"14",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
 			},
 			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"14",
-				"reference":"Schlafly & Finkbeiner (2011)"
-			},
-			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
 				"alias":"15",
-				"reference":"Planck Collaboration et al. (2015)"
+				"reference":"Schlafly & Finkbeiner (2011)"
 			}
 		],
 		"alias":[
@@ -139,7 +139,7 @@
 			{
 				"value":"+28:03:34.4",
 				"source":"4",
-				"unit":"nospace"
+				"unit":"degrees"
 			},
 			{
 				"value":"+28:03:34.31",
@@ -173,7 +173,8 @@
 			{
 				"value":"0.0094",
 				"error":"0.0005",
-				"source":"14"
+				"source":"14,15",
+				"derived":true
 			}
 		],
 		"host":[
@@ -194,28 +195,44 @@
 			{
 				"value":"+28:03:42",
 				"source":"4",
-				"unit":"nospace"
+				"unit":"degrees"
 			},
 			{
 				"value":"+28:03:42.2",
-				"source":"8"
+				"source":"8",
+				"unit":"degrees"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"7.783",
+				"source":"1,14,2,4",
+				"unit":"arcseconds",
+				"derived":true
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"2.987",
+				"source":"1,10,12,13,14,2,4,9"
 			}
 		],
 		"hostra":[
 			{
 				"value":"12:57:58",
 				"source":"4",
-				"unit":"nospace"
+				"unit":"hours"
 			},
 			{
 				"value":"12:57:57.74",
-				"source":"8"
+				"source":"8",
+				"unit":"hours"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"104",
-				"source":"13,15,12,9",
+				"source":"12,13,14,9",
 				"unit":"Mpc",
 				"derived":true
 			}
@@ -223,14 +240,15 @@
 		"maxabsmag":[
 			{
 				"value":"-19.2",
-				"source":"13,15,12,9",
+				"source":"12,13,14,9",
 				"derived":true
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"15.9",
-				"source":"13,6,7"
+				"source":"14,6,7",
+				"derived":true
 			}
 		],
 		"maxdate":[
@@ -248,7 +266,7 @@
 			{
 				"value":"12:57:57.71",
 				"source":"4",
-				"unit":"nospace"
+				"unit":"hours"
 			},
 			{
 				"value":"12:57:57.70",
@@ -259,7 +277,7 @@
 		"redshift":[
 			{
 				"value":"0.0232",
-				"source":"12,9"
+				"source":"12,13,9"
 			}
 		],
 		"velocity":[

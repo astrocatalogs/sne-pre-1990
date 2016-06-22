@@ -49,18 +49,18 @@
 				"reference":"Lennarz, Altmann, & Wiebusch (2012)"
 			},
 			{
-				"name":"2011ApJ...737..103S",
-				"bibcode":"2011ApJ...737..103S",
-				"alias":"8",
-				"reference":"Schlafly & Finkbeiner (2011)"
-			},
-			{
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"9",
+				"alias":"8",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
+			},
+			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"alias":"9",
+				"reference":"Schlafly & Finkbeiner (2011)"
 			},
 			{
 				"name":"2015arXiv150201589P",
@@ -82,7 +82,7 @@
 		"comovingdist":[
 			{
 				"value":"71",
-				"source":"9,10,7",
+				"source":"10,7,8",
 				"unit":"Mpc",
 				"derived":true
 			}
@@ -96,7 +96,7 @@
 			{
 				"value":"+20:32:38.53",
 				"source":"3",
-				"unit":"nospace"
+				"unit":"degrees"
 			},
 			{
 				"value":"+20:32:38.29",
@@ -134,7 +134,8 @@
 			{
 				"value":"0.0651",
 				"error":"0.0012",
-				"source":"8"
+				"source":"8,9",
+				"derived":true
 			}
 		],
 		"host":[
@@ -147,28 +148,44 @@
 			{
 				"value":"+20:32:32",
 				"source":"3",
-				"unit":"nospace"
+				"unit":"degrees"
 			},
 			{
 				"value":"+20:32:32.6",
-				"source":"7"
+				"source":"7",
+				"unit":"degrees"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"7.038",
+				"source":"1,2,3,8",
+				"unit":"arcseconds",
+				"derived":true
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"2.384",
+				"source":"1,10,2,3,7,8"
 			}
 		],
 		"hostra":[
 			{
 				"value":"16:05:13",
 				"source":"3",
-				"unit":"nospace"
+				"unit":"hours"
 			},
 			{
 				"value":"16:05:12.92",
-				"source":"7"
+				"source":"7",
+				"unit":"hours"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"72",
-				"source":"9,10,7",
+				"source":"10,7,8",
 				"kind":"host",
 				"unit":"Mpc",
 				"derived":true
@@ -189,7 +206,7 @@
 			{
 				"value":"16:05:12.73",
 				"source":"3,7",
-				"unit":"nospace"
+				"unit":"hours"
 			},
 			{
 				"value":"16:05:12.79",

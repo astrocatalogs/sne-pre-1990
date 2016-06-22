@@ -41,18 +41,18 @@
 				"reference":"Campbell et al. (2013)"
 			},
 			{
-				"name":"2011ApJ...737..103S",
-				"bibcode":"2011ApJ...737..103S",
-				"alias":"7",
-				"reference":"Schlafly & Finkbeiner (2011)"
-			},
-			{
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"8",
+				"alias":"7",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
+			},
+			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"alias":"8",
+				"reference":"Schlafly & Finkbeiner (2011)"
 			},
 			{
 				"name":"2015arXiv150201589P",
@@ -81,7 +81,7 @@
 		"comovingdist":[
 			{
 				"value":"1505",
-				"source":"8,9,3",
+				"source":"3,7,9",
 				"unit":"Mpc",
 				"derived":true
 			}
@@ -95,26 +95,57 @@
 			{
 				"value":"+00:37:52.97",
 				"source":"3",
-				"unit":"floatdegrees"
+				"unit":"degrees"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0753",
 				"error":"0.0042",
-				"source":"7"
+				"source":"7,8",
+				"derived":true
 			}
 		],
 		"host":[
 			{
 				"value":"SDSS J214621.80+003751.9",
-				"source":"5,4,6"
+				"source":"4,5,6"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"+00:37:51.9",
+				"source":"7",
+				"unit":"degrees",
+				"derived":true
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"0.3413",
+				"source":"1,2,7",
+				"unit":"arcseconds",
+				"derived":true
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"1.813",
+				"source":"1,2,3,7,9"
+			}
+		],
+		"hostra":[
+			{
+				"value":"21:46:21.80",
+				"source":"7",
+				"unit":"hours",
+				"derived":true
 			}
 		],
 		"lumdist":[
 			{
 				"value":"2068",
-				"source":"8,9,3",
+				"source":"3,7,9",
 				"kind":"spectroscopic",
 				"unit":"Mpc",
 				"derived":true
@@ -129,7 +160,7 @@
 			{
 				"value":"21:46:21.84",
 				"source":"3",
-				"unit":"floatdegrees"
+				"unit":"hours"
 			}
 		],
 		"redshift":[
@@ -143,7 +174,7 @@
 		"velocity":[
 			{
 				"value":"92150",
-				"source":"8,3",
+				"source":"3,7",
 				"kind":"spectroscopic",
 				"unit":"km/s",
 				"derived":true
