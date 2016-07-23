@@ -1,176 +1,123 @@
 {
 	"SN1986H":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"SN1986H",
 		"sources":[
 			{
-				"name":"1986IAUC.4219....1P",
-				"bibcode":"1986IAUC.4219....1P",
-				"alias":"1",
-				"reference":"Pennypacker et al. (1986)"
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"1"
 			},
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il",
+				"name":"1986IAUC.4219....1P",
+				"bibcode":"1986IAUC.4219....1P",
+				"reference":"Pennypacker et al. (1986)",
 				"alias":"2"
 			},
 			{
 				"name":"IAUC 4213",
-				"url":"http://www.cbat.eps.harvard.edu/iauc/04200/04213.html",
 				"bibcode":"1986IAUC.4213....3G",
-				"alias":"3",
-				"reference":"Graham (1986)"
+				"reference":"Graham (1986)",
+				"url":"http://www.cbat.eps.harvard.edu/iauc/04200/04213.html",
+				"alias":"3"
+			},
+			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
+				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4",
-				"secondary":true
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"5",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
-			},
-			{
-				"name":"2011ApJ...737..103S",
-				"bibcode":"2011ApJ...737..103S",
-				"alias":"6",
-				"reference":"Schlafly & Finkbeiner (2011)"
-			},
-			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
-				"alias":"7",
-				"reference":"Planck Collaboration et al. (2015)"
-			},
-			{
-				"name":"NED-D",
-				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
-				"alias":"8",
-				"secondary":true
+				"url":"https://sne.space",
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN1986H",
-				"source":"1,2,3,4"
+				"source":"2,3,4,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"False Positive",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"HII?",
-				"source":"3,4"
-			}
-		],
-		"comovingdist":[
-			{
-				"value":"19.8",
-				"source":"5,7,8",
-				"unit":"Mpc",
-				"derived":true
+				"source":"3,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"+07:16:32.0",
-				"source":"3,4",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"1986/05/11",
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Christian Pollas",
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0234",
-				"error":"0.0005",
-				"source":"5,6",
-				"derived":true
+				"derived":true,
+				"e_value":"0.0005",
+				"source":"1,6"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 5645",
-				"source":"2,3,4"
-			}
-		],
-		"lumdist":[
-			{
-				"value":"19.9",
-				"source":"5,7,8",
-				"kind":"host",
-				"unit":"Mpc",
-				"derived":true
-			}
-		],
-		"maxabsmag":[
-			{
-				"value":"-14.5",
-				"source":"5,7,8",
-				"derived":true
+				"source":"3,4,5"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17",
-				"source":"3,4,5",
-				"derived":true
+				"derived":true,
+				"source":"3,5,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"1986/05/10",
-				"source":"3,4,5",
-				"derived":true
+				"derived":true,
+				"source":"3,5,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"14:30:39.10",
-				"source":"3,4",
-				"unit":"hours"
-			}
-		],
-		"redshift":[
-			{
-				"value":"0.00448",
-				"source":"7,8",
-				"kind":"host",
-				"derived":true
-			}
-		],
-		"velocity":[
-			{
-				"value":"1340",
-				"source":"5,7,8",
-				"kind":"host",
-				"unit":"km/s",
-				"derived":true
+				"u_value":"hours",
+				"source":"3,5"
 			}
 		],
 		"photometry":[
 			{
 				"time":"46560.5",
-				"u_time":"MJD",
 				"magnitude":"17.0",
-				"source":"3,4"
+				"u_time":"MJD",
+				"source":"3,5"
 			}
 		]
 	}

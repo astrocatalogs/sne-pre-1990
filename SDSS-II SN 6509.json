@@ -1,68 +1,67 @@
 {
 	"SDSS-II SN 6509":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"SDSS-II SN 6509",
 		"sources":[
 			{
-				"name":"NED-D",
-				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
-				"alias":"1",
-				"secondary":true
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"reference":"Planck Collaboration et al. (2015)",
+				"alias":"1"
 			},
 			{
 				"name":"2014arXiv1401.3317S",
 				"bibcode":"2014arXiv1401.3317S",
-				"alias":"2",
-				"reference":"Sako et al. (2014)"
+				"reference":"Sako et al. (2014)",
+				"alias":"2"
+			},
+			{
+				"name":"NED-D",
+				"secondary":true,
+				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
+				"alias":"3"
 			},
 			{
 				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"3",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
-			},
-			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
-				"alias":"4",
-				"reference":"Planck Collaboration et al. (2015)"
+				"url":"https://sne.space",
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"SDSS-II SN 6509",
-				"source":"1"
+				"source":"3"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"524",
-				"source":"1,2",
-				"unit":"Mpc"
+				"u_value":"Mpc",
+				"source":"2,3"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"268.83",
-				"source":"1,2,3,4",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,3,4"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.058196",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"velocity":[
 			{
 				"value":"16940",
-				"source":"1,2,3",
-				"unit":"km/s",
-				"derived":true
+				"u_value":"km/s",
+				"source":"4"
 			}
 		]
 	}

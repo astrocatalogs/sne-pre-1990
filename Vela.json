@@ -1,63 +1,63 @@
 {
 	"Vela":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"Vela",
 		"sources":[
 			{
-				"name":"2001ApJ...561..930C",
-				"bibcode":"2001ApJ...561..930C",
-				"alias":"1",
-				"reference":"Caraveo et al. (2001)"
-			},
-			{
-				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
-				"bibcode":"2016arXiv160501054G",
-				"alias":"2",
-				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
-			},
-			{
 				"name":"2014BASI...42...47G",
 				"bibcode":"2014BASI...42...47G",
-				"alias":"3",
-				"reference":"Green (2014)"
+				"reference":"Green (2014)",
+				"alias":"1"
+			},
+			{
+				"name":"2001ApJ...561..930C",
+				"bibcode":"2001ApJ...561..930C",
+				"reference":"Caraveo et al. (2001)",
+				"alias":"4"
 			},
 			{
 				"name":"Galactic SNRs",
 				"url":"https://www.mrao.cam.ac.uk/surveys/snrs/snrs.data.html",
+				"alias":"3"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2016arXiv160501054G",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
+				"secondary":true,
+				"url":"https://sne.space",
 				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"Vela",
-				"source":"2,3,4"
+				"source":"1,3,4"
 			},
 			{
 				"value":"G263.9-03.3",
-				"source":"2,3,4"
+				"source":"1,3,4"
 			},
 			{
 				"value":"HSN11k",
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"value":"MWSNR 263.9-03.3",
-				"source":"3,4"
+				"source":"1,3"
 			}
 		],
 		"dec":[
 			{
 				"value":"-45:50",
-				"source":"3,4",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"1,3"
 			}
 		],
 		"host":[
 			{
 				"value":"Milky Way",
-				"source":"3,4"
+				"source":"1,3"
 			}
 		],
 		"lumdist":[
@@ -65,14 +65,15 @@
 				"value":"0.000294",
 				"e_lower_value":"0.000050",
 				"e_upper_value":"0.000075",
-				"source":"1"
+				"u_value":"Mpc",
+				"source":"4"
 			}
 		],
 		"ra":[
 			{
 				"value":"08:34:00",
-				"source":"3,4",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"1,3"
 			}
 		]
 	}

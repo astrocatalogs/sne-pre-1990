@@ -1,75 +1,82 @@
 {
 	"SN 0210":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"SN 0210",
 		"sources":[
 			{
-				"name":"NED-D",
-				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
-				"alias":"1",
-				"secondary":true
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"reference":"Planck Collaboration et al. (2015)",
+				"alias":"1"
 			},
 			{
 				"name":"2010ApJ...715..833O",
 				"bibcode":"2010ApJ...715..833O",
-				"alias":"2",
-				"reference":"Olivares E. et al. (2010)"
+				"reference":"Olivares E. et al. (2010)",
+				"alias":"2"
 			},
 			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
-				"alias":"3",
-				"reference":"Planck Collaboration et al. (2015)"
+				"name":"NED-D",
+				"secondary":true,
+				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
+				"alias":"3"
 			},
 			{
 				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"4",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
+				"url":"https://sne.space",
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN 0210",
-				"source":"1"
+				"source":"3"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"262",
-				"source":"1,2",
-				"unit":"Mpc"
+				"u_value":"Mpc",
+				"source":"2,3"
 			},
 			{
 				"value":"284",
-				"source":"1,2",
-				"unit":"Mpc"
+				"u_value":"Mpc",
+				"source":"2,3"
 			},
 			{
 				"value":"290",
-				"source":"1,2",
-				"unit":"Mpc"
+				"u_value":"Mpc",
+				"source":"2,3"
 			},
 			{
 				"value":"319",
-				"source":"1,2",
-				"unit":"Mpc"
+				"u_value":"Mpc",
+				"source":"2,3"
+			}
+		],
+		"discoverdate":[
+			{
+				"value":"210",
+				"derived":true,
+				"source":"4"
 			}
 		],
 		"host":[
 			{
 				"value":"MCG +00-03-054",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"303",
-				"source":"1,2,3,4",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,3,4"
 			}
 		],
 		"redshift":[
@@ -85,9 +92,8 @@
 		"velocity":[
 			{
 				"value":"18900",
-				"source":"1,2,3,4",
-				"unit":"km/s",
-				"derived":true
+				"u_value":"km/s",
+				"source":"4"
 			}
 		]
 	}

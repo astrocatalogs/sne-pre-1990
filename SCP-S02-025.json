@@ -1,63 +1,63 @@
 {
 	"SCP-S02-025":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"SCP-S02-025",
 		"sources":[
 			{
-				"name":"SIMBAD astronomical database",
-				"url":"http://simbad.u-strasbg.fr/",
-				"bibcode":"2000A&AS..143....9W",
-				"alias":"1",
-				"secondary":true,
-				"reference":"Wenger et al. (2000)"
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"1"
 			},
 			{
 				"name":"2005A&A...430..843L",
 				"bibcode":"2005A&A...430..843L",
-				"alias":"2",
-				"reference":"Lidman et al. (2005)"
+				"reference":"Lidman et al. (2005)",
+				"alias":"2"
 			},
 			{
 				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"3",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
+				"url":"https://sne.space",
+				"alias":"3"
 			},
 			{
-				"name":"2011ApJ...737..103S",
-				"bibcode":"2011ApJ...737..103S",
-				"alias":"4",
-				"reference":"Schlafly & Finkbeiner (2011)"
+				"name":"SIMBAD astronomical database",
+				"bibcode":"2000A&AS..143....9W",
+				"reference":"Wenger et al. (2000)",
+				"secondary":true,
+				"url":"http://simbad.u-strasbg.fr/",
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"SCP-S02-025",
-				"source":"1"
+				"source":"4"
 			}
 		],
 		"dec":[
 			{
 				"value":"+05:17:25.5",
-				"source":"1,2",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"2,4"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0237",
-				"error":"0.0006",
-				"source":"3,4",
-				"derived":true
+				"derived":true,
+				"e_value":"0.0006",
+				"source":"1,3"
 			}
 		],
 		"ra":[
 			{
 				"value":"13:57:50.11",
-				"source":"1,2",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"2,4"
 			}
 		]
 	}
