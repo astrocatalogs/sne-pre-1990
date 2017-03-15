@@ -4,34 +4,40 @@
 		"name":"SN1986H",
 		"sources":[
 			{
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
+				"alias":"1"
+			},
+			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
 				"reference":"Schlafly & Finkbeiner (2011)",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"1986IAUC.4219....1P",
 				"bibcode":"1986IAUC.4219....1P",
 				"reference":"Pennypacker et al. (1986)",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"IAUC 4213",
 				"bibcode":"1986IAUC.4213....3G",
 				"reference":"Graham (1986)",
 				"url":"http://www.cbat.eps.harvard.edu/iauc/04200/04213.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -39,42 +45,58 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
+			},
+			{
+				"name":"NED-D",
+				"bibcode":"1991ASSL..171...89H",
+				"reference":"Helou et al. (1991)",
+				"secondary":true,
+				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN1986H",
-				"source":"2,3,4,5"
+				"source":"3,4,5,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"False Positive",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"value":"HII?",
-				"source":"3,5"
+				"source":"4,6"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"19.8",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,7,8"
 			}
 		],
 		"dec":[
 			{
 				"value":"+07:16:32.0",
 				"u_value":"degrees",
-				"source":"3,5"
+				"source":"4,6"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"1986/05/11",
-				"source":"3,5"
+				"source":"4,6"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Christian Pollas",
-				"source":"3,5"
+				"source":"4,6"
 			}
 		],
 		"ebv":[
@@ -82,48 +104,112 @@
 				"value":"0.0234",
 				"derived":true,
 				"e_value":"0.0005",
-				"source":"1,6"
+				"source":"2,7"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 5645",
-				"source":"3,4,5"
+				"source":"4,5,6"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"19.8",
+				"derived":true,
+				"source":"1,7,8"
+			}
+		],
+		"hostlumdist":[
+			{
+				"value":"19.89",
+				"derived":true,
+				"source":"1,7,8"
+			}
+		],
+		"hostredshift":[
+			{
+				"value":"0.00448",
+				"derived":true,
+				"source":"1,8"
+			}
+		],
+		"hostvelocity":[
+			{
+				"value":"1340",
+				"source":"7"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"19.89",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,7,8"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-14.49",
+				"derived":true,
+				"source":"1,7,8"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17",
 				"derived":true,
-				"source":"3,5,6"
+				"source":"4,6,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"1986/05/11",
 				"derived":true,
-				"source":"3,5,6"
+				"source":"4,6,7"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-14.49",
+				"derived":true,
+				"source":"1,7,8"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17",
 				"derived":true,
-				"source":"3,5,6"
+				"source":"4,6,7"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"1986/05/11",
 				"derived":true,
-				"source":"3,5,6"
+				"source":"4,6,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"14:30:39.10",
 				"u_value":"hours",
-				"source":"3,5"
+				"source":"4,6"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.00448",
+				"derived":true,
+				"kind":"host",
+				"source":"1,8"
+			}
+		],
+		"velocity":[
+			{
+				"value":"1340",
+				"u_value":"km/s",
+				"source":"7"
 			}
 		],
 		"photometry":[
@@ -131,13 +217,13 @@
 				"time":"46560.5",
 				"magnitude":"17.0",
 				"u_time":"MJD",
-				"source":"3,5"
+				"source":"4,6"
 			},
 			{
 				"time":"46561.0",
 				"magnitude":"17.0",
 				"u_time":"MJD",
-				"source":"3,5"
+				"source":"4,6"
 			}
 		]
 	}
