@@ -4,21 +4,21 @@
 		"name":"SN1973K",
 		"sources":[
 			{
-				"name":"SIMBAD astronomical database",
-				"bibcode":"2000A&AS..143....9W",
-				"secondary":true,
-				"url":"http://simbad.u-strasbg.fr/",
+				"name":"2012A&A...538A.120L",
+				"bibcode":"2012A&A...538A.120L",
+				"reference":"Lennarz, Altmann, & Wiebusch (2012)",
 				"alias":"1"
 			},
 			{
-				"bibcode":"1993BICDS..42...17T",
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
 				"alias":"2"
 			},
 			{
-				"name":"Asiago Supernova Catalogue",
-				"bibcode":"1989A&AS...81..421B",
-				"secondary":true,
-				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"name":"1993BICDS..42...17T",
+				"bibcode":"1993BICDS..42...17T",
+				"reference":"Tsvetkov & Bartunov (1993)",
 				"alias":"3"
 			},
 			{
@@ -27,32 +27,52 @@
 				"alias":"4"
 			},
 			{
-				"name":"Latest Supernovae",
-				"secondary":true,
-				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"name":"PASP 86, 516",
+				"url":"http://adsabs.harvard.edu/abs/1974PASP...86..516K",
 				"alias":"5"
 			},
 			{
-				"name":"PASP 86, 516",
-				"url":"http://adsabs.harvard.edu/abs/1974PASP...86..516K",
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
 				"alias":"6"
 			},
 			{
-				"bibcode":"2012A&A...538A.120L",
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
 				"alias":"7"
+			},
+			{
+				"name":"SIMBAD astronomical database",
+				"bibcode":"2000A&AS..143....9W",
+				"reference":"Wenger et al. (2000)",
+				"secondary":true,
+				"url":"http://simbad.u-strasbg.fr/",
+				"alias":"8"
+			},
+			{
+				"name":"Asiago Supernova Catalogue",
+				"bibcode":"1989A&AS...81..421B",
+				"reference":"Barbon, Cappellaro, & Turatto (1989)",
+				"secondary":true,
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"9"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN1973K",
-				"source":"1,3,4,5,6,7"
+				"source":"1,4,5,6,8,9"
 			}
 		],
 		"dec":[
 			{
 				"value":"-05:58.6",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"3,8"
 			},
 			{
 				"value":"-05:58:37.0",
@@ -62,60 +82,104 @@
 			{
 				"value":"-05:58:56.0",
 				"u_value":"degrees",
-				"source":"7"
+				"source":"1"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"1973/04/26",
-				"source":"3,4,5,6,7"
+				"source":"1,4,5,6,9"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Zwicky",
-				"source":"3"
+				"source":"9"
 			},
 			{
 				"value":"Fritz Zwicky",
 				"source":"5,6"
 			}
 		],
+		"ebv":[
+			{
+				"value":"0.0397",
+				"derived":true,
+				"e_value":"0.0006",
+				"source":"2,7"
+			}
+		],
 		"host":[
 			{
 				"value":"A121342-0559",
-				"source":"3"
+				"source":"9"
 			}
 		],
 		"hostdec":[
 			{
 				"value":"-05:59",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"9"
 			},
 			{
 				"value":"-05:59:00.0",
 				"u_value":"degrees",
-				"source":"7"
+				"source":"1"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"38.29",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"3,7,8,9"
 			}
 		],
 		"hostra":[
 			{
 				"value":"12:13:42",
 				"u_value":"hours",
-				"source":"3"
+				"source":"9"
 			},
 			{
 				"value":"12:13:42.00",
 				"u_value":"hours",
-				"source":"7"
+				"source":"1"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"19.1",
+				"derived":true,
+				"source":"5,6,7"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"1973/04/25",
+				"derived":true,
+				"source":"5,6,7"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"19.1",
+				"derived":true,
+				"source":"5,6,7"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"1973/04/25",
+				"derived":true,
+				"source":"5,6,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"12:13:40",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"3,8"
 			},
 			{
 				"value":"12:13:40.5",
@@ -125,7 +189,7 @@
 			{
 				"value":"12:13:42.40",
 				"u_value":"hours",
-				"source":"7"
+				"source":"1"
 			}
 		],
 		"photometry":[

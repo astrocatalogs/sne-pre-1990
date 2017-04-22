@@ -4,28 +4,27 @@
 		"name":"SN1965D",
 		"sources":[
 			{
-				"name":"The Open Supernova Catalog",
-				"bibcode":"2017ApJ...835...64G",
-				"secondary":true,
-				"url":"https://sne.space",
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
 				"alias":"1"
 			},
 			{
-				"name":"SIMBAD astronomical database",
-				"bibcode":"2000A&AS..143....9W",
-				"secondary":true,
-				"url":"http://simbad.u-strasbg.fr/",
+				"name":"2012A&A...538A.120L",
+				"bibcode":"2012A&A...538A.120L",
+				"reference":"Lennarz, Altmann, & Wiebusch (2012)",
 				"alias":"2"
 			},
 			{
-				"bibcode":"1993PASP..105.1250P",
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
 				"alias":"3"
 			},
 			{
-				"name":"Asiago Supernova Catalogue",
-				"bibcode":"1989A&AS...81..421B",
-				"secondary":true,
-				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"name":"1993PASP..105.1250P",
+				"bibcode":"1993PASP..105.1250P",
+				"reference":"Porter (1993)",
 				"alias":"4"
 			},
 			{
@@ -34,37 +33,65 @@
 				"alias":"5"
 			},
 			{
-				"name":"Latest Supernovae",
-				"secondary":true,
-				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"name":"IAUC 1898",
+				"url":"http://www.cbat.eps.harvard.edu/iauc/01800/01898.html",
 				"alias":"6"
 			},
 			{
-				"name":"IAUC 1898",
-				"url":"http://www.cbat.eps.harvard.edu/iauc/01800/01898.html",
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
 				"alias":"7"
 			},
 			{
-				"bibcode":"2012A&A...538A.120L",
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
 				"alias":"8"
+			},
+			{
+				"name":"SIMBAD astronomical database",
+				"bibcode":"2000A&AS..143....9W",
+				"reference":"Wenger et al. (2000)",
+				"secondary":true,
+				"url":"http://simbad.u-strasbg.fr/",
+				"alias":"9"
+			},
+			{
+				"name":"Asiago Supernova Catalogue",
+				"bibcode":"1989A&AS...81..421B",
+				"reference":"Barbon, Cappellaro, & Turatto (1989)",
+				"secondary":true,
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"10"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN1965D",
-				"source":"2,4,5,6,7,8"
+				"source":"2,5,6,7,9,10"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"49",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,8"
 			}
 		],
 		"dec":[
 			{
 				"value":"-27:54:16.8",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"4,9"
 			},
 			{
 				"value":"-27:54:16.6",
 				"u_value":"degrees",
-				"source":"4"
+				"source":"10"
 			},
 			{
 				"value":"-27:54:16.70",
@@ -80,17 +107,25 @@
 		"discoverdate":[
 			{
 				"value":"1965/02/26",
-				"source":"4,5,6,7,8"
+				"source":"2,5,6,7,10"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Zwicky",
-				"source":"4"
+				"source":"10"
 			},
 			{
 				"value":"Fritz Zwicky",
 				"source":"6,7"
+			}
+		],
+		"ebv":[
+			{
+				"value":"0.0512",
+				"derived":true,
+				"e_value":"0.001",
+				"source":"3,8"
 			}
 		],
 		"errors":[
@@ -103,67 +138,145 @@
 		"host":[
 			{
 				"value":"MCG -05-25-32",
-				"source":"4"
+				"source":"10"
 			},
 			{
 				"value":"ESO 437-G32",
-				"source":"6,7,8"
+				"source":"2,6,7"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"49",
+				"derived":true,
+				"source":"1,2,8"
 			}
 		],
 		"hostdec":[
 			{
 				"value":"-27:54:45",
 				"u_value":"degrees",
-				"source":"4"
+				"source":"10"
 			},
 			{
 				"value":"-27:54:44.8",
 				"u_value":"degrees",
-				"source":"8"
+				"source":"2"
+			}
+		],
+		"hostlumdist":[
+			{
+				"value":"49.1",
+				"derived":true,
+				"source":"1,2,8"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"33.12",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"2,4,5,6,7,8,9,10"
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"7.782",
+				"source":"1,2,4,5,6,7,8,9,10"
 			}
 		],
 		"hostra":[
 			{
 				"value":"10:39:25",
 				"u_value":"hours",
-				"source":"4"
+				"source":"10"
 			},
 			{
 				"value":"10:39:24.98",
 				"u_value":"hours",
-				"source":"8"
+				"source":"2"
 			}
 		],
 		"hostredshift":[
 			{
 				"value":"0.011",
-				"source":"8"
+				"source":"2"
 			}
 		],
 		"hostvelocity":[
 			{
 				"value":"3208",
 				"kind":"host",
-				"source":"4"
+				"source":"10"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"49.1",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,8"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-19.4",
+				"derived":true,
+				"source":"1,2,8"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"14",
+				"derived":true,
+				"source":"6,7,8"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"1965/02/25",
+				"derived":true,
+				"source":"6,7,8"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-19.5",
+				"derived":true,
+				"source":"1,2,8"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"14",
+				"derived":true,
+				"source":"6,7,8"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"1965/02/25",
+				"derived":true,
+				"source":"6,7,8"
 			}
 		],
 		"ra":[
 			{
 				"value":"10:39:26.31",
 				"u_value":"hours",
-				"source":"2,3,5,6,7,8"
+				"source":"2,4,5,6,7,9"
 			},
 			{
 				"value":"10:39:26.32",
 				"u_value":"hours",
-				"source":"4"
+				"source":"10"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.011",
 				"kind":"host",
-				"source":"8"
+				"source":"2"
 			}
 		],
 		"velocity":[
@@ -171,7 +284,7 @@
 				"value":"3208",
 				"kind":"host",
 				"u_value":"km/s",
-				"source":"4"
+				"source":"10"
 			}
 		],
 		"photometry":[

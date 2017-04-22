@@ -4,78 +4,147 @@
 		"name":"SDSS-II SN 14549",
 		"sources":[
 			{
-				"name":"SIMBAD astronomical database",
-				"bibcode":"2000A&AS..143....9W",
-				"secondary":true,
-				"url":"http://simbad.u-strasbg.fr/",
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
 				"alias":"1"
 			},
 			{
-				"bibcode":"2011ApJ...738..162S",
+				"name":"2014arXiv1401.3317S",
+				"bibcode":"2014arXiv1401.3317S",
+				"reference":"Sako et al. (2014)",
+				"url":"http://data.sdss3.org/sas/dr10/boss/papers/supernova/",
 				"alias":"2"
 			},
 			{
+				"name":"2012ApJ...755...61S",
 				"bibcode":"2012ApJ...755...61S",
+				"reference":"Smith et al. (2012)",
 				"alias":"3"
 			},
 			{
-				"bibcode":"2010ApJ...713.1026D",
+				"name":"2011ApJ...738..162S",
+				"bibcode":"2011ApJ...738..162S",
+				"reference":"Sako et al. (2011)",
 				"alias":"4"
 			},
 			{
-				"bibcode":"2014arXiv1401.3317S",
-				"url":"http://data.sdss3.org/sas/dr10/boss/papers/supernova/",
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
 				"alias":"5"
+			},
+			{
+				"name":"2010ApJ...713.1026D",
+				"bibcode":"2010ApJ...713.1026D",
+				"reference":"Dilday et al. (2010)",
+				"alias":"6"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"7"
+			},
+			{
+				"name":"SIMBAD astronomical database",
+				"bibcode":"2000A&AS..143....9W",
+				"reference":"Wenger et al. (2000)",
+				"secondary":true,
+				"url":"http://simbad.u-strasbg.fr/",
+				"alias":"8"
+			},
+			{
+				"name":"NED-D v13.1.0",
+				"bibcode":"1991ASSL..171...89H",
+				"reference":"Helou et al. (1991)",
+				"secondary":true,
+				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
+				"alias":"9"
 			}
 		],
 		"alias":[
 			{
 				"value":"SDSS-II SN 14549",
-				"source":"1,2,3,4,5"
+				"source":"2,3,4,6,8,9"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"probability":"1.0",
 				"source":"2"
 			},
 			{
 				"value":"Ia",
-				"source":"5"
+				"probability":"1.0",
+				"source":"4"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"857",
+				"u_value":"Mpc",
+				"source":"4,9"
+			},
+			{
+				"value":"978",
+				"u_value":"Mpc",
+				"source":"2,9"
+			},
+			{
+				"value":"1040",
+				"u_value":"Mpc",
+				"source":"2,9"
 			}
 		],
 		"dec":[
 			{
 				"value":"+00:57:48.19",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"4,8"
 			},
 			{
 				"value":"+00:57:47.95",
 				"u_value":"degrees",
-				"source":"4"
+				"source":"6"
 			},
 			{
 				"value":"+00:57:48.193",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"value":"+00:57:48.2",
 				"u_value":"degrees",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"value":"+00:57:47.934",
 				"u_value":"degrees",
-				"source":"5"
+				"source":"2"
+			}
+		],
+		"ebv":[
+			{
+				"value":"0.0181",
+				"derived":true,
+				"e_value":"0.0004",
+				"source":"5,7"
 			}
 		],
 		"host":[
 			{
 				"value":"SDSS J03243.45+005748.6",
-				"source":"5"
+				"source":"2"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"914.1",
+				"derived":true,
+				"source":"1,3,7"
 			}
 		],
 		"hostdec":[
@@ -87,7 +156,28 @@
 			{
 				"value":"+00:57:48.672",
 				"u_value":"degrees",
-				"source":"5"
+				"source":"2"
+			}
+		],
+		"hostlumdist":[
+			{
+				"value":"1113.3",
+				"derived":true,
+				"source":"1,3,7"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"0.5389",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"3,4,7,8"
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"1.765",
+				"source":"2,3,4,7,8,9"
 			}
 		],
 		"hostra":[
@@ -99,7 +189,7 @@
 			{
 				"value":"00:32:43.4568",
 				"u_value":"hours",
-				"source":"5"
+				"source":"2"
 			}
 		],
 		"hostredshift":[
@@ -109,64 +199,111 @@
 				"source":"3"
 			}
 		],
+		"hostvelocity":[
+			{
+				"value":"58340",
+				"source":"7"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"1409.6",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,7,9"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-19.6573",
+				"derived":true,
+				"source":"1,2,7,9"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"20.83",
+				"derived":true,
+				"source":"2,7"
+			}
+		],
+		"maxband":[
+			{
+				"value":"z'",
+				"derived":true,
+				"source":"2,7"
+			}
+		],
 		"maxdate":[
 			{
 				"value":"2006/10/07",
-				"source":"5"
+				"source":"2"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-19.9155",
+				"derived":true,
+				"source":"1,2,7,9"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"20.83",
+				"derived":true,
+				"source":"2,7"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"z'",
+				"derived":true,
+				"source":"2,7"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2006/10/16",
+				"derived":true,
+				"source":"2,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"00:32:43.470",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"4,8"
 			},
 			{
 				"value":"00:32:43.454",
 				"u_value":"hours",
-				"source":"4"
+				"source":"6"
 			},
 			{
 				"value":"00:32:43.4712",
 				"u_value":"hours",
-				"source":"2,5"
+				"source":"2,4"
 			},
 			{
 				"value":"00:32:43.4544",
 				"u_value":"hours",
-				"source":"5"
+				"source":"2"
 			}
 		],
 		"redshift":[
 			{
-				"value":"0.229",
-				"kind":"heliocentric",
-				"source":"4"
-			},
-			{
 				"value":"0.268413",
-				"e_value":"5.3e-05",
-				"kind":"spectroscopic",
-				"source":"5"
+				"source":"2,9"
+			}
+		],
+		"velocity":[
+			{
+				"value":"69967.1",
+				"u_value":"km/s",
+				"source":"7"
 			}
 		],
 		"photometry":[
-			{
-				"time":"53975.326509",
-				"band":"g'",
-				"bandset":"SDSS",
-				"e_fluxdensity":"5.421e-01",
-				"e_magnitude":"0.819",
-				"fluxdensity":"-1.860e-01",
-				"magnitude":"25.430",
-				"system":"SDSS",
-				"telescope":"SDSS",
-				"u_fluxdensity":"μJy",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"upperlimitsigma":"3.0",
-				"source":"5"
-			},
 			{
 				"time":"53975.323191",
 				"band":"r'",
@@ -182,7 +319,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.23726779116456020272897217",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"53975.324021",
@@ -199,23 +336,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.08201414275575940394587482",
-				"source":"5"
-			},
-			{
-				"time":"53975.325679",
-				"band":"z'",
-				"bandset":"SDSS",
-				"e_fluxdensity":"4.375e+00",
-				"e_magnitude":"0.719",
-				"fluxdensity":"-3.797e+00",
-				"magnitude":"23.557",
-				"system":"SDSS",
-				"telescope":"SDSS",
-				"u_fluxdensity":"μJy",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"upperlimitsigma":"3.0",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"53975.324850",
@@ -231,23 +352,39 @@
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"53990.340118",
-				"band":"g'",
+				"time":"53975.325679",
+				"band":"z'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"1.146e+00",
-				"e_magnitude":"1.380",
-				"fluxdensity":"-5.358e-01",
-				"magnitude":"25.946",
+				"e_fluxdensity":"4.375e+00",
+				"e_magnitude":"0.719",
+				"fluxdensity":"-3.797e+00",
+				"magnitude":"23.557",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"source":"5"
+				"source":"2"
+			},
+			{
+				"time":"53975.326509",
+				"band":"g'",
+				"bandset":"SDSS",
+				"e_fluxdensity":"5.421e-01",
+				"e_magnitude":"0.819",
+				"fluxdensity":"-1.860e-01",
+				"magnitude":"25.430",
+				"system":"SDSS",
+				"telescope":"SDSS",
+				"u_fluxdensity":"μJy",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"upperlimitsigma":"3.0",
+				"source":"2"
 			},
 			{
 				"time":"53990.336801",
@@ -264,7 +401,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.81472309943897458598312998",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"53990.337630",
@@ -281,7 +418,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.68988957395132540353590692",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"53990.339289",
@@ -298,24 +435,23 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.74541754071898532036312415",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"53994.350217",
+				"time":"53990.340118",
 				"band":"g'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"5.924e-01",
-				"e_magnitude":"0.786",
-				"fluxdensity":"5.008e-01",
-				"magnitude":"24.337",
+				"e_fluxdensity":"1.146e+00",
+				"e_magnitude":"1.380",
+				"fluxdensity":"-5.358e-01",
+				"magnitude":"25.946",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.58616080050593316415770521",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"53994.346899",
@@ -332,7 +468,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"21.59294966310460712472153670",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"53994.347729",
@@ -348,24 +484,7 @@
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"source":"5"
-			},
-			{
-				"time":"53994.349387",
-				"band":"z'",
-				"bandset":"SDSS",
-				"e_fluxdensity":"4.601e+00",
-				"e_magnitude":"0.853",
-				"fluxdensity":"7.216e-02",
-				"magnitude":"22.818",
-				"system":"SDSS",
-				"telescope":"SDSS",
-				"u_fluxdensity":"μJy",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"upperlimitsigma":"3.0",
-				"zeropoint":"19.96374131133471329028641850",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"53994.348558",
@@ -382,24 +501,41 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.91304086334835494926321865",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"53996.334060",
-				"band":"g'",
+				"time":"53994.349387",
+				"band":"z'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"5.571e-01",
-				"e_magnitude":"0.834",
-				"fluxdensity":"2.044e-01",
-				"magnitude":"24.777",
+				"e_fluxdensity":"4.601e+00",
+				"e_magnitude":"0.853",
+				"fluxdensity":"7.216e-02",
+				"magnitude":"22.818",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.05320222865668780553520237",
-				"source":"5"
+				"zeropoint":"19.96374131133471329028641850",
+				"source":"2"
+			},
+			{
+				"time":"53994.350217",
+				"band":"g'",
+				"bandset":"SDSS",
+				"e_fluxdensity":"5.924e-01",
+				"e_magnitude":"0.786",
+				"fluxdensity":"5.008e-01",
+				"magnitude":"24.337",
+				"system":"SDSS",
+				"telescope":"SDSS",
+				"u_fluxdensity":"μJy",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"upperlimitsigma":"3.0",
+				"zeropoint":"23.58616080050593316415770521",
+				"source":"2"
 			},
 			{
 				"time":"53996.330743",
@@ -416,7 +552,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.56413545645220713997410693",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"53996.331572",
@@ -432,23 +568,7 @@
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"source":"5"
-			},
-			{
-				"time":"53996.333231",
-				"band":"z'",
-				"bandset":"SDSS",
-				"e_fluxdensity":"5.021e+00",
-				"e_magnitude":"0.817",
-				"fluxdensity":"-3.850e+00",
-				"magnitude":"23.565",
-				"system":"SDSS",
-				"telescope":"SDSS",
-				"u_fluxdensity":"μJy",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"upperlimitsigma":"3.0",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"53996.332402",
@@ -465,24 +585,40 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.88434501331526598105531854",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"53998.302582",
-				"band":"g'",
+				"time":"53996.333231",
+				"band":"z'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"5.197e-01",
-				"e_magnitude":"0.448",
-				"fluxdensity":"1.133e+00",
-				"magnitude":"23.667",
+				"e_fluxdensity":"5.021e+00",
+				"e_magnitude":"0.817",
+				"fluxdensity":"-3.850e+00",
+				"magnitude":"23.565",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.80257477465849311480317791",
-				"source":"5"
+				"source":"2"
+			},
+			{
+				"time":"53996.334060",
+				"band":"g'",
+				"bandset":"SDSS",
+				"e_fluxdensity":"5.571e-01",
+				"e_magnitude":"0.834",
+				"fluxdensity":"2.044e-01",
+				"magnitude":"24.777",
+				"system":"SDSS",
+				"telescope":"SDSS",
+				"u_fluxdensity":"μJy",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"upperlimitsigma":"3.0",
+				"zeropoint":"23.05320222865668780553520237",
+				"source":"2"
 			},
 			{
 				"time":"53998.299265",
@@ -499,7 +635,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.79034994021020020374016451",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"53998.300094",
@@ -516,7 +652,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"21.74569738976497804558713062",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"53998.301753",
@@ -532,24 +668,24 @@
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54005.333039",
+				"time":"53998.302582",
 				"band":"g'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"4.880e-01",
-				"e_magnitude":"0.121",
-				"fluxdensity":"4.337e+00",
-				"magnitude":"22.281",
+				"e_fluxdensity":"5.197e-01",
+				"e_magnitude":"0.448",
+				"fluxdensity":"1.133e+00",
+				"magnitude":"23.667",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.87397355537190478419471270",
-				"source":"5"
+				"zeropoint":"23.80257477465849311480317791",
+				"source":"2"
 			},
 			{
 				"time":"54005.329722",
@@ -566,7 +702,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.89020436346349257206278367",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54005.330551",
@@ -583,7 +719,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.87042288397870431306068418",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54005.332210",
@@ -600,24 +736,24 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.78891472385181956638891450",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54008.293620",
+				"time":"54005.333039",
 				"band":"g'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"5.907e-01",
-				"e_magnitude":"0.146",
-				"fluxdensity":"4.353e+00",
-				"magnitude":"22.277",
+				"e_fluxdensity":"4.880e-01",
+				"e_magnitude":"0.121",
+				"fluxdensity":"4.337e+00",
+				"magnitude":"22.281",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.87397166789349577737983160",
-				"source":"5"
+				"zeropoint":"23.87397355537190478419471270",
+				"source":"2"
 			},
 			{
 				"time":"54008.290303",
@@ -634,7 +770,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.89038491602971463148133922",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54008.291132",
@@ -651,24 +787,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.87633918987184981697474561",
-				"source":"5"
-			},
-			{
-				"time":"54008.292790",
-				"band":"z'",
-				"bandset":"SDSS",
-				"e_fluxdensity":"4.556e+00",
-				"e_magnitude":"0.846",
-				"fluxdensity":"2.173e-01",
-				"magnitude":"22.788",
-				"system":"SDSS",
-				"telescope":"SDSS",
-				"u_fluxdensity":"μJy",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"upperlimitsigma":"3.0",
-				"zeropoint":"21.13064931580131135035601035",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54008.291961",
@@ -685,24 +804,41 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.91939330477196456445830224",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54010.288423",
-				"band":"g'",
+				"time":"54008.292790",
+				"band":"z'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"6.991e-01",
-				"e_magnitude":"0.157",
-				"fluxdensity":"4.813e+00",
-				"magnitude":"22.169",
+				"e_fluxdensity":"4.556e+00",
+				"e_magnitude":"0.846",
+				"fluxdensity":"2.173e-01",
+				"magnitude":"22.788",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.87503965419339622597861517",
-				"source":"5"
+				"zeropoint":"21.13064931580131135035601035",
+				"source":"2"
+			},
+			{
+				"time":"54008.293620",
+				"band":"g'",
+				"bandset":"SDSS",
+				"e_fluxdensity":"5.907e-01",
+				"e_magnitude":"0.146",
+				"fluxdensity":"4.353e+00",
+				"magnitude":"22.277",
+				"system":"SDSS",
+				"telescope":"SDSS",
+				"u_fluxdensity":"μJy",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"upperlimitsigma":"3.0",
+				"zeropoint":"23.87397166789349577737983160",
+				"source":"2"
 			},
 			{
 				"time":"54010.285106",
@@ -719,7 +855,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.89265107647305445710635807",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54010.285935",
@@ -736,23 +872,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.87825233255104529700206570",
-				"source":"5"
-			},
-			{
-				"time":"54010.287594",
-				"band":"z'",
-				"bandset":"SDSS",
-				"e_fluxdensity":"4.173e+00",
-				"e_magnitude":"0.771",
-				"fluxdensity":"-1.379e+00",
-				"magnitude":"23.113",
-				"system":"SDSS",
-				"telescope":"SDSS",
-				"u_fluxdensity":"μJy",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"upperlimitsigma":"3.0",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54010.286765",
@@ -769,24 +889,40 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.29342757030032448964761332",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54012.281146",
-				"band":"g'",
+				"time":"54010.287594",
+				"band":"z'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"1.224e+00",
-				"e_magnitude":"0.270",
-				"fluxdensity":"4.958e+00",
-				"magnitude":"22.137",
+				"e_fluxdensity":"4.173e+00",
+				"e_magnitude":"0.771",
+				"fluxdensity":"-1.379e+00",
+				"magnitude":"23.113",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.87526630607950656542830303",
-				"source":"5"
+				"source":"2"
+			},
+			{
+				"time":"54010.288423",
+				"band":"g'",
+				"bandset":"SDSS",
+				"e_fluxdensity":"6.991e-01",
+				"e_magnitude":"0.157",
+				"fluxdensity":"4.813e+00",
+				"magnitude":"22.169",
+				"system":"SDSS",
+				"telescope":"SDSS",
+				"u_fluxdensity":"μJy",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"upperlimitsigma":"3.0",
+				"zeropoint":"23.87503965419339622597861517",
+				"source":"2"
 			},
 			{
 				"time":"54012.277829",
@@ -803,7 +939,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.89333873700942372590197577",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54012.278658",
@@ -820,7 +956,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.87856624485155908800128327",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54012.280317",
@@ -837,24 +973,24 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.77114090455760391078301638",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54020.287104",
+				"time":"54012.281146",
 				"band":"g'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"8.229e-01",
-				"e_magnitude":"0.178",
-				"fluxdensity":"5.019e+00",
-				"magnitude":"22.124",
+				"e_fluxdensity":"1.224e+00",
+				"e_magnitude":"0.270",
+				"fluxdensity":"4.958e+00",
+				"magnitude":"22.137",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.87554298920514238252226330",
-				"source":"5"
+				"zeropoint":"23.87526630607950656542830303",
+				"source":"2"
 			},
 			{
 				"time":"54020.283787",
@@ -871,7 +1007,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.89147279247849676623877102",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54020.284617",
@@ -888,24 +1024,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.87604908963704554169703994",
-				"source":"5"
-			},
-			{
-				"time":"54020.286275",
-				"band":"z'",
-				"bandset":"SDSS",
-				"e_fluxdensity":"5.841e+00",
-				"e_magnitude":"0.891",
-				"fluxdensity":"4.770e+00",
-				"magnitude":"21.954",
-				"system":"SDSS",
-				"telescope":"SDSS",
-				"u_fluxdensity":"μJy",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"upperlimitsigma":"3.0",
-				"zeropoint":"23.65029594760028480055762024",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54020.285446",
@@ -922,24 +1041,41 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.90476514827444080634430553",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54024.368668",
-				"band":"g'",
+				"time":"54020.286275",
+				"band":"z'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"8.246e-01",
-				"e_magnitude":"0.188",
-				"fluxdensity":"4.760e+00",
-				"magnitude":"22.181",
+				"e_fluxdensity":"5.841e+00",
+				"e_magnitude":"0.891",
+				"fluxdensity":"4.770e+00",
+				"magnitude":"21.954",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.87501738180123287419965986",
-				"source":"5"
+				"zeropoint":"23.65029594760028480055762024",
+				"source":"2"
+			},
+			{
+				"time":"54020.287104",
+				"band":"g'",
+				"bandset":"SDSS",
+				"e_fluxdensity":"8.229e-01",
+				"e_magnitude":"0.178",
+				"fluxdensity":"5.019e+00",
+				"magnitude":"22.124",
+				"system":"SDSS",
+				"telescope":"SDSS",
+				"u_fluxdensity":"μJy",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"upperlimitsigma":"3.0",
+				"zeropoint":"23.87554298920514238252226330",
+				"source":"2"
 			},
 			{
 				"time":"54024.365351",
@@ -956,7 +1092,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.89309504024584228052070515",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54024.366181",
@@ -973,7 +1109,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.87566368796375361387104362",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54024.367839",
@@ -990,24 +1126,24 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.86312169852985359868205874",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54030.280256",
+				"time":"54024.368668",
 				"band":"g'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"4.804e-01",
-				"e_magnitude":"0.222",
-				"fluxdensity":"2.283e+00",
-				"magnitude":"22.963",
+				"e_fluxdensity":"8.246e-01",
+				"e_magnitude":"0.188",
+				"fluxdensity":"4.760e+00",
+				"magnitude":"22.181",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.85926477872558815915938060",
-				"source":"5"
+				"zeropoint":"23.87501738180123287419965986",
+				"source":"2"
 			},
 			{
 				"time":"54030.276939",
@@ -1024,7 +1160,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.88698524982581840978371062",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54030.277769",
@@ -1041,24 +1177,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.87637573474550413294138128",
-				"source":"5"
-			},
-			{
-				"time":"54030.279427",
-				"band":"z'",
-				"bandset":"SDSS",
-				"e_fluxdensity":"4.055e+00",
-				"e_magnitude":"0.647",
-				"fluxdensity":"4.253e+00",
-				"magnitude":"22.035",
-				"system":"SDSS",
-				"telescope":"SDSS",
-				"u_fluxdensity":"μJy",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"upperlimitsigma":"3.0",
-				"zeropoint":"23.60673845678505825185944749",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54030.278598",
@@ -1075,24 +1194,41 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.87592425634775241219129009",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54035.355776",
-				"band":"g'",
+				"time":"54030.279427",
+				"band":"z'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"7.711e-01",
-				"e_magnitude":"0.448",
-				"fluxdensity":"1.842e+00",
-				"magnitude":"23.185",
+				"e_fluxdensity":"4.055e+00",
+				"e_magnitude":"0.647",
+				"fluxdensity":"4.253e+00",
+				"magnitude":"22.035",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.84822406465207529315843809",
-				"source":"5"
+				"zeropoint":"23.60673845678505825185944749",
+				"source":"2"
+			},
+			{
+				"time":"54030.280256",
+				"band":"g'",
+				"bandset":"SDSS",
+				"e_fluxdensity":"4.804e-01",
+				"e_magnitude":"0.222",
+				"fluxdensity":"2.283e+00",
+				"magnitude":"22.963",
+				"system":"SDSS",
+				"telescope":"SDSS",
+				"u_fluxdensity":"μJy",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"upperlimitsigma":"3.0",
+				"zeropoint":"23.85926477872558815915938060",
+				"source":"2"
 			},
 			{
 				"time":"54035.352459",
@@ -1109,7 +1245,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.88393288947418391825729279",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54035.353288",
@@ -1126,7 +1262,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.86960121659977971555313044",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54035.354947",
@@ -1142,24 +1278,24 @@
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54037.261238",
+				"time":"54035.355776",
 				"band":"g'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"5.483e-01",
-				"e_magnitude":"0.568",
-				"fluxdensity":"8.760e-01",
-				"magnitude":"23.901",
+				"e_fluxdensity":"7.711e-01",
+				"e_magnitude":"0.448",
+				"fluxdensity":"1.842e+00",
+				"magnitude":"23.185",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.75726026542020182199223148",
-				"source":"5"
+				"zeropoint":"23.84822406465207529315843809",
+				"source":"2"
 			},
 			{
 				"time":"54037.257921",
@@ -1176,7 +1312,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.88561287981760497027573282",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54037.258750",
@@ -1193,7 +1329,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.85894864536487920409845610",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54037.260409",
@@ -1210,24 +1346,24 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.78640334063829634494850417",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54040.275430",
+				"time":"54037.261238",
 				"band":"g'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"1.285e+00",
-				"e_magnitude":"0.346",
-				"fluxdensity":"4.098e+00",
-				"magnitude":"22.342",
+				"e_fluxdensity":"5.483e-01",
+				"e_magnitude":"0.568",
+				"fluxdensity":"8.760e-01",
+				"magnitude":"23.901",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.87342988516294048977147685",
-				"source":"5"
+				"zeropoint":"23.75726026542020182199223148",
+				"source":"2"
 			},
 			{
 				"time":"54040.272113",
@@ -1244,7 +1380,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.86133615832675477828332122",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54040.272943",
@@ -1261,23 +1397,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.80493064430758390678633328",
-				"source":"5"
-			},
-			{
-				"time":"54040.274601",
-				"band":"z'",
-				"bandset":"SDSS",
-				"e_fluxdensity":"5.454e+00",
-				"e_magnitude":"0.681",
-				"fluxdensity":"-7.397e+00",
-				"magnitude":"24.066",
-				"system":"SDSS",
-				"telescope":"SDSS",
-				"u_fluxdensity":"μJy",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"upperlimitsigma":"3.0",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54040.273772",
@@ -1293,24 +1413,40 @@
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54047.305710",
-				"band":"g'",
+				"time":"54040.274601",
+				"band":"z'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"2.458e+00",
-				"e_magnitude":"2.229",
-				"fluxdensity":"2.025e-01",
-				"magnitude":"24.780",
+				"e_fluxdensity":"5.454e+00",
+				"e_magnitude":"0.681",
+				"fluxdensity":"-7.397e+00",
+				"magnitude":"24.066",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.04606256887671839688158456",
-				"source":"5"
+				"source":"2"
+			},
+			{
+				"time":"54040.275430",
+				"band":"g'",
+				"bandset":"SDSS",
+				"e_fluxdensity":"1.285e+00",
+				"e_magnitude":"0.346",
+				"fluxdensity":"4.098e+00",
+				"magnitude":"22.342",
+				"system":"SDSS",
+				"telescope":"SDSS",
+				"u_fluxdensity":"μJy",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"upperlimitsigma":"3.0",
+				"zeropoint":"23.87342988516294048977147685",
+				"source":"2"
 			},
 			{
 				"time":"54047.303223",
@@ -1327,7 +1463,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.87675293680710355374930054",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54047.304881",
@@ -1344,23 +1480,24 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.82951070340884200519787372",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54049.301586",
+				"time":"54047.305710",
 				"band":"g'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"1.575e+00",
-				"e_magnitude":"1.707",
-				"fluxdensity":"-6.043e-01",
-				"magnitude":"26.032",
+				"e_fluxdensity":"2.458e+00",
+				"e_magnitude":"2.229",
+				"fluxdensity":"2.025e-01",
+				"magnitude":"24.780",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"source":"5"
+				"zeropoint":"23.04606256887671839688158456",
+				"source":"2"
 			},
 			{
 				"time":"54049.298269",
@@ -1377,23 +1514,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.82921028993955960970106418",
-				"source":"5"
-			},
-			{
-				"time":"54049.300757",
-				"band":"z'",
-				"bandset":"SDSS",
-				"e_fluxdensity":"7.560e+00",
-				"e_magnitude":"0.997",
-				"fluxdensity":"-6.987e+00",
-				"magnitude":"24.017",
-				"system":"SDSS",
-				"telescope":"SDSS",
-				"u_fluxdensity":"μJy",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"upperlimitsigma":"3.0",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54049.299927",
@@ -1410,24 +1531,39 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.96607863787405357965077698",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54053.265694",
-				"band":"g'",
+				"time":"54049.300757",
+				"band":"z'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"5.562e-01",
-				"e_magnitude":"0.762",
-				"fluxdensity":"4.452e-01",
-				"magnitude":"24.413",
+				"e_fluxdensity":"7.560e+00",
+				"e_magnitude":"0.997",
+				"fluxdensity":"-6.987e+00",
+				"magnitude":"24.017",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.53438788915667676016928561",
-				"source":"5"
+				"source":"2"
+			},
+			{
+				"time":"54049.301586",
+				"band":"g'",
+				"bandset":"SDSS",
+				"e_fluxdensity":"1.575e+00",
+				"e_magnitude":"1.707",
+				"fluxdensity":"-6.043e-01",
+				"magnitude":"26.032",
+				"system":"SDSS",
+				"telescope":"SDSS",
+				"u_fluxdensity":"μJy",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"upperlimitsigma":"3.0",
+				"source":"2"
 			},
 			{
 				"time":"54053.262377",
@@ -1444,7 +1580,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.84272882211259928388113153",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54053.263207",
@@ -1461,24 +1597,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.86509151552850932857359431",
-				"source":"5"
-			},
-			{
-				"time":"54053.264865",
-				"band":"z'",
-				"bandset":"SDSS",
-				"e_fluxdensity":"4.553e+00",
-				"e_magnitude":"0.830",
-				"fluxdensity":"1.434e+00",
-				"magnitude":"22.542",
-				"system":"SDSS",
-				"telescope":"SDSS",
-				"u_fluxdensity":"μJy",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"upperlimitsigma":"3.0",
-				"zeropoint":"22.93337287832945329377606990",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54053.264036",
@@ -1495,24 +1614,41 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.82318673116087606556148813",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54056.267082",
-				"band":"g'",
+				"time":"54053.264865",
+				"band":"z'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"7.198e-01",
-				"e_magnitude":"1.031",
-				"fluxdensity":"2.124e-01",
-				"magnitude":"24.764",
+				"e_fluxdensity":"4.553e+00",
+				"e_magnitude":"0.830",
+				"fluxdensity":"1.434e+00",
+				"magnitude":"22.542",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.08188628102357863819547495",
-				"source":"5"
+				"zeropoint":"22.93337287832945329377606990",
+				"source":"2"
+			},
+			{
+				"time":"54053.265694",
+				"band":"g'",
+				"bandset":"SDSS",
+				"e_fluxdensity":"5.562e-01",
+				"e_magnitude":"0.762",
+				"fluxdensity":"4.452e-01",
+				"magnitude":"24.413",
+				"system":"SDSS",
+				"telescope":"SDSS",
+				"u_fluxdensity":"μJy",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"upperlimitsigma":"3.0",
+				"zeropoint":"23.53438788915667676016928561",
+				"source":"2"
 			},
 			{
 				"time":"54056.263765",
@@ -1529,7 +1665,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.85590385453285314980236329",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54056.264594",
@@ -1546,7 +1682,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.78760751179017626491996572",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54056.266252",
@@ -1563,24 +1699,24 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.55587781932438788199126202",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54059.261111",
+				"time":"54056.267082",
 				"band":"g'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"8.171e-01",
-				"e_magnitude":"0.322",
-				"fluxdensity":"2.751e+00",
-				"magnitude":"22.767",
+				"e_fluxdensity":"7.198e-01",
+				"e_magnitude":"1.031",
+				"fluxdensity":"2.124e-01",
+				"magnitude":"24.764",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.86572647597420882204324608",
-				"source":"5"
+				"zeropoint":"23.08188628102357863819547495",
+				"source":"2"
 			},
 			{
 				"time":"54059.257794",
@@ -1597,7 +1733,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.76820858990898998855520497",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54059.258624",
@@ -1614,7 +1750,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.83748980431782365700464393",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54059.260282",
@@ -1631,24 +1767,24 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.81933184182510446659190841",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54062.265732",
+				"time":"54059.261111",
 				"band":"g'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"6.125e-01",
-				"e_magnitude":"0.726",
-				"fluxdensity":"6.903e-01",
-				"magnitude":"24.101",
+				"e_fluxdensity":"8.171e-01",
+				"e_magnitude":"0.322",
+				"fluxdensity":"2.751e+00",
+				"magnitude":"22.767",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.69859468347076458514304337",
-				"source":"5"
+				"zeropoint":"23.86572647597420882204324608",
+				"source":"2"
 			},
 			{
 				"time":"54062.262415",
@@ -1665,7 +1801,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.86247196281178526915381372",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54062.263245",
@@ -1682,7 +1818,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.86900825092692912239268491",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54062.264903",
@@ -1698,24 +1834,24 @@
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"source":"5"
+				"source":"2"
 			},
 			{
-				"time":"54068.245870",
+				"time":"54062.265732",
 				"band":"g'",
 				"bandset":"SDSS",
-				"e_fluxdensity":"1.730e+00",
-				"e_magnitude":"0.785",
-				"fluxdensity":"2.668e+00",
-				"magnitude":"22.799",
+				"e_fluxdensity":"6.125e-01",
+				"e_magnitude":"0.726",
+				"fluxdensity":"6.903e-01",
+				"magnitude":"24.101",
 				"system":"SDSS",
 				"telescope":"SDSS",
 				"u_fluxdensity":"μJy",
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"zeropoint":"23.86446456311127839157025416",
-				"source":"5"
+				"zeropoint":"23.69859468347076458514304337",
+				"source":"2"
 			},
 			{
 				"time":"54068.242553",
@@ -1731,7 +1867,7 @@
 				"u_time":"MJD",
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54068.243382",
@@ -1748,24 +1884,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.75571319362007122871926139",
-				"source":"5"
-			},
-			{
-				"time":"54068.245041",
-				"band":"z'",
-				"bandset":"SDSS",
-				"e_fluxdensity":"6.990e+00",
-				"e_magnitude":"1.010",
-				"fluxdensity":"5.549e+00",
-				"magnitude":"21.839",
-				"system":"SDSS",
-				"telescope":"SDSS",
-				"u_fluxdensity":"μJy",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"upperlimitsigma":"3.0",
-				"zeropoint":"23.69953681203541462309271698",
-				"source":"5"
+				"source":"2"
 			},
 			{
 				"time":"54068.244211",
@@ -1782,7 +1901,41 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"23.95687004127690251972398423",
-				"source":"5"
+				"source":"2"
+			},
+			{
+				"time":"54068.245041",
+				"band":"z'",
+				"bandset":"SDSS",
+				"e_fluxdensity":"6.990e+00",
+				"e_magnitude":"1.010",
+				"fluxdensity":"5.549e+00",
+				"magnitude":"21.839",
+				"system":"SDSS",
+				"telescope":"SDSS",
+				"u_fluxdensity":"μJy",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"upperlimitsigma":"3.0",
+				"zeropoint":"23.69953681203541462309271698",
+				"source":"2"
+			},
+			{
+				"time":"54068.245870",
+				"band":"g'",
+				"bandset":"SDSS",
+				"e_fluxdensity":"1.730e+00",
+				"e_magnitude":"0.785",
+				"fluxdensity":"2.668e+00",
+				"magnitude":"22.799",
+				"system":"SDSS",
+				"telescope":"SDSS",
+				"u_fluxdensity":"μJy",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"upperlimitsigma":"3.0",
+				"zeropoint":"23.86446456311127839157025416",
+				"source":"2"
 			}
 		]
 	}
