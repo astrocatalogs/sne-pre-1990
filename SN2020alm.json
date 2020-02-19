@@ -15,15 +15,26 @@
 				"alias":"2"
 			},
 			{
+				"name":"CPCS Alert 28245",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=28245",
+				"alias":"3"
+			},
+			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
-				"alias":"3"
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,27 +42,27 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2020alm",
-				"source":"2,3,4"
+				"source":"2,4,6"
 			},
 			{
 				"value":"AT2020alm",
-				"source":"2,4"
+				"source":"2,6"
 			},
 			{
 				"value":"Gaia20ajg",
-				"source":"2,4"
+				"source":"2,5,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"comovingdist":[
@@ -59,31 +70,31 @@
 				"value":"261.7",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"dec":[
 			{
 				"value":"+23:32:22.85",
 				"u_value":"degrees",
-				"source":"2,4"
+				"source":"2,6"
 			},
 			{
 				"value":"+23:32:22.92",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,5"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2020/01/19",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"lumdist":[
@@ -91,88 +102,88 @@
 				"value":"277.37",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-19.672",
+				"value":"-21.302",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"17.48",
+				"value":"15.85",
 				"derived":true,
-				"source":"2,5"
+				"source":"3,5,7"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"R",
 				"derived":true,
-				"source":"2,5"
+				"source":"3,5,7"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2020/01/19",
+				"value":"2020/02/13",
 				"derived":true,
-				"source":"2,5"
+				"source":"3,5,7"
 			}
 		],
 		"maxvisualabsmag":[
 			{
-				"value":"-18.975",
+				"value":"-19.465",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"18.24",
+				"value":"17.75",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,5,7"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"g",
+				"value":"B",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2020/01/28",
+				"value":"2020/02/11",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,5,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"16:52:01.477",
 				"u_value":"hours",
-				"source":"2,4"
+				"source":"2,6"
 			},
 			{
 				"value":"16:52:01.44",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.05997",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"velocity":[
 			{
 				"value":"17440",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"7"
 			}
 		],
 		"photometry":[
@@ -875,7 +886,7 @@
 				"telescope":"ATLAS1",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"3"
+				"source":"4"
 			},
 			{
 				"time":"58801.548",
@@ -966,7 +977,7 @@
 				"telescope":"Gaia",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"3"
+				"source":"4"
 			},
 			{
 				"time":"58854.5586806",
@@ -976,7 +987,7 @@
 				"telescope":"P48",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"3"
+				"source":"4"
 			},
 			{
 				"time":"58867.4469907",
@@ -987,7 +998,7 @@
 				"observer":"Robot",
 				"telescope":"Gaia",
 				"u_time":"MJD",
-				"source":"3"
+				"source":"4"
 			},
 			{
 				"time":"58867.448",
@@ -1018,7 +1029,7 @@
 				"observer":"Robot",
 				"telescope":"ATLAS1",
 				"u_time":"MJD",
-				"source":"3"
+				"source":"4"
 			},
 			{
 				"time":"58873.5350579",
@@ -1028,7 +1039,7 @@
 				"magnitude":"18.11",
 				"telescope":"P48",
 				"u_time":"MJD",
-				"source":"3"
+				"source":"4"
 			},
 			{
 				"time":"58876.5362731",
@@ -1038,7 +1049,7 @@
 				"magnitude":"18.24",
 				"telescope":"P48",
 				"u_time":"MJD",
-				"source":"3"
+				"source":"4"
 			},
 			{
 				"time":"58876.5362731",
@@ -1048,7 +1059,61 @@
 				"magnitude":"18.27",
 				"telescope":"P48",
 				"u_time":"MJD",
-				"source":"3"
+				"source":"4"
+			},
+			{
+				"time":"58890.2446",
+				"band":"B",
+				"e_magnitude":"0.0908613",
+				"magnitude":"17.7544",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"3,5"
+			},
+			{
+				"time":"58890.2491",
+				"band":"V",
+				"e_magnitude":"0.0365576",
+				"magnitude":"16.584",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"3,5"
+			},
+			{
+				"time":"58890.2537",
+				"band":"R",
+				"e_magnitude":"0.021197",
+				"magnitude":"16.0828",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"3,5"
+			},
+			{
+				"time":"58892.2614",
+				"band":"B",
+				"e_magnitude":"0.0819414",
+				"magnitude":"17.9305",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"3,5"
+			},
+			{
+				"time":"58892.266",
+				"band":"V",
+				"e_magnitude":"0.0395294",
+				"magnitude":"16.5749",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"3,5"
+			},
+			{
+				"time":"58892.2705",
+				"band":"R",
+				"e_magnitude":"0.0208652",
+				"magnitude":"15.8536",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"3,5"
 			}
 		],
 		"spectra":[
@@ -2129,7 +2194,7 @@
 						"6.140e-16"
 					]
 				],
-				"source":"3"
+				"source":"4"
 			}
 		]
 	}
