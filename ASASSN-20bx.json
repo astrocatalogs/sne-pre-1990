@@ -9,20 +9,25 @@
 				"alias":"1"
 			},
 			{
-				"name":"ASAS-SN Supernovae",
-				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"name":"ATel 13503",
+				"url":"http://www.astronomerstelegram.org/?read=13503",
 				"alias":"2"
 			},
 			{
-				"name":"ATel 13503",
-				"url":"http://www.astronomerstelegram.org/?read=13503",
+				"name":"Gaia Photometric Science Alerts",
+				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
 				"alias":"3"
+			},
+			{
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -30,47 +35,62 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-20bx",
-				"source":"1,4"
+				"source":"1,2,5"
 			},
 			{
 				"value":"AT2020chs",
-				"source":"1,2,3,4"
+				"source":"1,2,3,4,5"
+			},
+			{
+				"value":"Gaia20axl",
+				"source":"2,5"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Candidate",
+				"source":"3"
 			}
 		],
 		"dec":[
 			{
 				"value":"-40:13:52.21",
 				"u_value":"degrees",
-				"source":"1,4"
+				"source":"1,5"
+			},
+			{
+				"value":"-40:13:50.61",
+				"u_value":"degrees",
+				"source":"2,5"
 			},
 			{
 				"value":"-40:13:50.52",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,3,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2020/02/11",
-				"source":"1,4"
+				"source":"1,2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"1,4"
+				"source":"1,2,5"
 			}
 		],
 		"host":[
 			{
 				"value":"WISEA J021239.88-401350.5",
-				"source":"2,3"
+				"source":"2,4"
 			}
 		],
 		"hostdec":[
@@ -78,14 +98,14 @@
 				"value":"-40:13:50.5",
 				"derived":true,
 				"u_value":"degrees",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"hostoffsetang":[
 			{
 				"value":"0.14",
 				"u_value":"arcseconds",
-				"source":"2,3"
+				"source":"2,4"
 			}
 		],
 		"hostra":[
@@ -93,64 +113,85 @@
 				"value":"02:12:39.88",
 				"derived":true,
 				"u_value":"hours",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17",
 				"derived":true,
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2020/02/11",
 				"derived":true,
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17",
 				"derived":true,
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2020/02/11",
 				"derived":true,
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"02:12:39.854",
 				"u_value":"hours",
-				"source":"1,4"
+				"source":"1,5"
+			},
+			{
+				"value":"02:12:39.892",
+				"u_value":"hours",
+				"source":"2,5"
+			},
+			{
+				"value":"02:12:39.96",
+				"u_value":"hours",
+				"source":"3"
 			},
 			{
 				"value":"02:12:39.888",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
+			{
+				"time":"58874.17",
+				"band":"G",
+				"instrument":"Astrometric",
+				"magnitude":"21.5",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
 			{
 				"time":"58879.2519907",
 				"band":"orange",
@@ -191,6 +232,37 @@
 				"telescope":"ASASSN-5",
 				"u_time":"MJD",
 				"source":"1"
+			},
+			{
+				"time":"58899.8789931",
+				"band":"G",
+				"e_magnitude":"0.2",
+				"instrument":"Astrometric",
+				"magnitude":"17.42",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58899.880",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"17.42",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58899.954",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"17.40",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
 			}
 		]
 	}
