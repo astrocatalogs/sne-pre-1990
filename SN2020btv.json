@@ -20,10 +20,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 28344",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=28344",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,31 +42,31 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2020btv",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			},
 			{
 				"value":"AT2020btv",
-				"source":"2,4"
+				"source":"2,6"
 			},
 			{
 				"value":"ZTF20aajjxwc",
-				"source":"2,4"
+				"source":"2,6"
 			},
 			{
 				"value":"Gaia20att",
-				"source":"2,4"
+				"source":"2,5,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			}
 		],
 		"comovingdist":[
@@ -63,31 +74,31 @@
 				"value":"200",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"dec":[
 			{
 				"value":"+68:42:25.25",
 				"u_value":"degrees",
-				"source":"2,4"
+				"source":"2,6"
 			},
 			{
 				"value":"+68:42:25.56",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2020/02/03",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ZTF",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"lumdist":[
@@ -95,88 +106,88 @@
 				"value":"180",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-18",
+				"value":"-20",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"17.9",
+				"value":"15.92",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"V",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2020/02/11",
+				"value":"2020/02/25",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualabsmag":[
 			{
-				"value":"-18",
+				"value":"-19",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"17.9",
+				"value":"17.44",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"B",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2020/02/11",
+				"value":"2020/02/25",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"08:41:12.767",
 				"u_value":"hours",
-				"source":"2,4"
+				"source":"2,6"
 			},
 			{
 				"value":"08:41:12.72",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.04",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"velocity":[
 			{
 				"value":"10000",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"7"
 			}
 		],
 		"photometry":[
@@ -271,7 +282,7 @@
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"17.90",
+				"magnitude":"17.91",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
@@ -282,6 +293,164 @@
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
 				"magnitude":"17.91",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58896.9141",
+				"band":"Ipg",
+				"magnitude":"17.0592",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58896.9156",
+				"band":"r",
+				"magnitude":"17.6651",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58896.9171",
+				"band":"i",
+				"magnitude":"17.2178",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58896.9186",
+				"band":"i",
+				"magnitude":"17.1433",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58896.9201",
+				"band":"i",
+				"magnitude":"17.1656",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58896.9217",
+				"band":"V",
+				"magnitude":"17.6833",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58896.9233",
+				"band":"V",
+				"magnitude":"17.6229",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58896.9248",
+				"band":"V",
+				"magnitude":"17.5601",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58904.1187",
+				"band":"r",
+				"magnitude":"16.3247",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58904.1202",
+				"band":"r",
+				"magnitude":"16.45",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58904.1217",
+				"band":"r",
+				"magnitude":"16.507",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58904.1263",
+				"band":"V",
+				"magnitude":"15.9178",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58904.1278",
+				"band":"B",
+				"magnitude":"17.4354",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58904.1294",
+				"band":"B",
+				"magnitude":"17.7048",
+				"observatory":"IST60,Tolga Guver",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58913.744",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.84",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58913.818",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.82",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58914.9793",
+				"band":"r",
+				"magnitude":"17.8922",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58914.9824",
+				"band":"r",
+				"magnitude":"18.5264",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58947.626",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"20.14",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
