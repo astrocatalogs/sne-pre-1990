@@ -20,10 +20,15 @@
 				"alias":"3"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,31 +36,31 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2020lkw",
-				"source":"2,3,4"
+				"source":"2,3,4,5"
 			},
 			{
 				"value":"AT2020lkw",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"PS20dnq",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"Gaia20cud",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"II",
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"comovingdist":[
@@ -63,32 +68,32 @@
 				"value":"99.235",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+33:13:47.64",
 				"u_value":"degrees",
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2020/05/25",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"PS1",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"host":[
 			{
 				"value":"KUG 1429+334",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"lumdist":[
@@ -96,63 +101,70 @@
 				"value":"101.472",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-17.0075",
+				"value":"-16.9875",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"18",
+				"value":"18.02",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"4,6"
+			}
+		],
+		"maxband":[
+			{
+				"value":"w",
+				"derived":true,
+				"source":"4,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2020/05/24",
+				"value":"2020/05/25",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"4,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-16.8217",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"18.21",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2020/06/15",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"14:31:25.591",
 				"u_value":"hours",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"14:31:25.68",
@@ -163,22 +175,38 @@
 		"redshift":[
 			{
 				"value":"0.022541",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"6681.5",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"photometry":[
 			{
-				"time":"58993.5",
-				"magnitude":"18.0",
+				"time":"58994.446",
+				"band":"w",
+				"e_magnitude":"0.02",
+				"instrument":"GPC1",
+				"magnitude":"18.02",
+				"observer":"Robot",
+				"telescope":"PS1",
 				"u_time":"MJD",
-				"source":"2,4"
+				"source":"4"
+			},
+			{
+				"time":"58997.363",
+				"band":"i",
+				"e_magnitude":"0.04",
+				"instrument":"GPC1",
+				"magnitude":"18.59",
+				"observer":"Robot",
+				"telescope":"PS1",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"59015.434",
