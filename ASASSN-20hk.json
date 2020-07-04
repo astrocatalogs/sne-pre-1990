@@ -4,15 +4,25 @@
 		"name":"ASASSN-20hk",
 		"sources":[
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/object/2020nni",
+				"name":"ATel 13843",
+				"url":"http://www.astronomerstelegram.org/?read=13843",
 				"alias":"1"
+			},
+			{
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"alias":"2"
+			},
+			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"3"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,22 +30,27 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-20hk",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"AT2020nni",
-				"source":"1,2"
+				"source":"1,2,3,4"
 			}
 		],
 		"dec":[
 			{
-				"value":"+17:03:14.26",
+				"value":"+17:03:12.94",
+				"u_value":"degrees",
+				"source":"1,4"
+			},
+			{
+				"value":"+17:03:12.96",
 				"u_value":"degrees",
 				"source":"1,2"
 			}
@@ -43,12 +58,18 @@
 		"discoverdate":[
 			{
 				"value":"2020/06/26",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
+				"source":"1,4"
+			}
+		],
+		"host":[
+			{
+				"value":"Unknown",
 				"source":"1,2"
 			}
 		],
@@ -56,43 +77,97 @@
 			{
 				"value":"16.9",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"3,5"
+			}
+		],
+		"maxband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2020/06/25",
+				"value":"2020/06/26",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"16.9",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"3,5"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2020/06/25",
+				"value":"2020/06/26",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"3,5"
 			}
 		],
 		"ra":[
 			{
-				"value":"18:08:22.399",
+				"value":"18:08:22.467",
+				"u_value":"hours",
+				"source":"1,4"
+			},
+			{
+				"value":"18:08:22.56",
 				"u_value":"hours",
 				"source":"1,2"
 			}
 		],
 		"photometry":[
 			{
-				"time":"59025.5",
-				"magnitude":"16.9",
+				"time":"59022.42",
+				"band":"g",
+				"instrument":"Leavitt",
+				"magnitude":"18.3",
+				"telescope":"ASASSN-4",
 				"u_time":"MJD",
-				"source":"1,2"
+				"upperlimit":true,
+				"source":"3"
+			},
+			{
+				"time":"59023.511",
+				"band":"cyan",
+				"instrument":"ACAM1",
+				"magnitude":"16.51",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"3"
+			},
+			{
+				"time":"59025.434",
+				"band":"orange",
+				"e_magnitude":"0.028",
+				"instrument":"ACAM1",
+				"magnitude":"17.202",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"59026.26",
+				"band":"g",
+				"instrument":"Leavitt",
+				"magnitude":"16.9",
+				"telescope":"ASASSN-4",
+				"u_time":"MJD",
+				"source":"3"
 			}
 		]
 	}

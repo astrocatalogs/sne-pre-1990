@@ -4,15 +4,25 @@
 		"name":"ASASSN-20he",
 		"sources":[
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/object/2020nhi",
+				"name":"ATel 13843",
+				"url":"http://www.astronomerstelegram.org/?read=13843",
 				"alias":"1"
+			},
+			{
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"alias":"2"
+			},
+			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"3"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,22 +30,27 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-20he",
-				"source":"1,2"
+				"source":"1,4"
 			},
 			{
 				"value":"AT2020nhi",
-				"source":"1,2"
+				"source":"1,2,3,4"
 			}
 		],
 		"dec":[
 			{
-				"value":"-51:44:53.20",
+				"value":"-51:44:52.51",
+				"u_value":"degrees",
+				"source":"1,4"
+			},
+			{
+				"value":"-51:44:52.44",
 				"u_value":"degrees",
 				"source":"1,2"
 			}
@@ -43,56 +58,117 @@
 		"discoverdate":[
 			{
 				"value":"2020/06/23",
-				"source":"1,2"
+				"source":"1,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
+				"source":"1,4"
+			}
+		],
+		"host":[
+			{
+				"value":"WISEA J022426.05-514453.8",
 				"source":"1,2"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"-51:44:53.8",
+				"derived":true,
+				"u_value":"degrees",
+				"source":"5"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"2.7",
+				"u_value":"arcseconds",
+				"source":"1,2"
+			}
+		],
+		"hostra":[
+			{
+				"value":"02:24:26.05",
+				"derived":true,
+				"u_value":"hours",
+				"source":"5"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.7",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"3,5"
+			}
+		],
+		"maxband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2020/06/22",
+				"value":"2020/06/23",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"16.7",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"3,5"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2020/06/22",
+				"value":"2020/06/23",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"3,5"
 			}
 		],
 		"ra":[
 			{
-				"value":"02:24:25.838",
+				"value":"02:24:26.001",
+				"u_value":"hours",
+				"source":"1,4"
+			},
+			{
+				"value":"02:24:25.992",
 				"u_value":"hours",
 				"source":"1,2"
 			}
 		],
 		"photometry":[
 			{
-				"time":"59022.5",
-				"magnitude":"16.7",
+				"time":"59017.12",
+				"band":"g",
+				"instrument":"Payne-Gaposchkin",
+				"magnitude":"18",
+				"telescope":"ASASSN-5",
 				"u_time":"MJD",
-				"source":"1,2"
+				"upperlimit":true,
+				"source":"3"
+			},
+			{
+				"time":"59023.12",
+				"band":"g",
+				"instrument":"Payne-Gaposchkin",
+				"magnitude":"16.7",
+				"telescope":"ASASSN-5",
+				"u_time":"MJD",
+				"source":"3"
 			}
 		]
 	}
