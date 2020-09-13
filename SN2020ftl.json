@@ -15,15 +15,20 @@
 				"alias":"2"
 			},
 			{
+				"name":"Gaia Photometric Science Alerts",
+				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
+				"alias":"3"
+			},
+			{
 				"name":"Supernova Hunt",
 				"url":"http://nesssi.cacr.caltech.edu/catalina/current.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,43 +36,47 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2020ftl",
-				"source":"2,3,4"
+				"source":"2,3,4,5"
 			},
 			{
 				"value":"AT2020ftl",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"SNhunt428",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"PS20bak",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"AT2020ghk",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"ATLAS20jqt",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"ZTF20aaumsrr",
-				"source":"2,4"
+				"source":"2,5"
+			},
+			{
+				"value":"Gaia20dna",
+				"source":"2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,4"
+				"source":"2,3,5"
 			}
 		],
 		"comovingdist":[
@@ -75,41 +84,46 @@
 				"value":"32",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+05:20:35.95",
 				"u_value":"degrees",
-				"source":"2,4"
+				"source":"2,5"
+			},
+			{
+				"value":"+05:20:35.844",
+				"u_value":"degrees",
+				"source":"3"
 			},
 			{
 				"value":"+05:20:35.52",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2020/04/02",
-				"source":"2,3,4"
+				"source":"2,4,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"CRTS",
-				"source":"2,3,4"
+				"source":"2,4,5"
 			},
 			{
 				"value":"Villi",
-				"source":"3"
+				"source":"4"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 4277",
-				"source":"2,3,4"
+				"source":"2,4,5"
 			}
 		],
 		"lumdist":[
@@ -117,88 +131,88 @@
 				"value":"32.5",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-18.3",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"14.22",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2020/04/16",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-18.3",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"14.22",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2020/04/16",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"12:20:03.772",
 				"u_value":"hours",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"12:20:03.84",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,4"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.0073",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"2200",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"photometry":[
@@ -311,6 +325,56 @@
 				"telescope":"P48",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"59020.661",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"17.51",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"59059.057",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.52",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"59059.233",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.49",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"59060.156",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.50",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"59060.230",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.52",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
 			}
 		],
 		"spectra":[
