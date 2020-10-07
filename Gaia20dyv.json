@@ -15,10 +15,15 @@
 				"alias":"2"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,7 +31,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"NED-D",
@@ -34,17 +39,17 @@
 				"reference":"Helou et al. (1991)",
 				"secondary":true,
 				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia20dyv",
-				"source":"2,3"
+				"source":"2,4"
 			},
 			{
 				"value":"AT2020rzl",
-				"source":"2,3"
+				"source":"2,3,4"
 			}
 		],
 		"claimedtype":[
@@ -58,14 +63,14 @@
 				"value":"34.4",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,4,5"
+				"source":"1,5,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+04:55:06.13",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,4"
 			},
 			{
 				"value":"+04:55:06.132",
@@ -76,46 +81,46 @@
 		"discoverdate":[
 			{
 				"value":"2020/08/24",
-				"source":"2,3"
+				"source":"2,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"2,3"
+				"source":"2,4"
 			}
 		],
 		"host":[
 			{
 				"value":"UGC 3637",
-				"source":"2,3"
+				"source":"2,4"
 			}
 		],
 		"hostcomovingdist":[
 			{
 				"value":"34.4",
 				"derived":true,
-				"source":"1,4,5"
+				"source":"1,5,6"
 			}
 		],
 		"hostlumdist":[
 			{
 				"value":"34.68",
 				"derived":true,
-				"source":"1,4,5"
+				"source":"1,5,6"
 			}
 		],
 		"hostredshift":[
 			{
 				"value":"0.00779",
 				"derived":true,
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"hostvelocity":[
 			{
 				"value":"2330",
-				"source":"4"
+				"source":"5"
 			}
 		],
 		"lumdist":[
@@ -123,70 +128,70 @@
 				"value":"34.68",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,4,5"
+				"source":"1,5,6"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-14",
 				"derived":true,
-				"source":"1,4,5"
+				"source":"1,5,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.69",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2020/08/24",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-14.01",
 				"derived":true,
-				"source":"1,4,5"
+				"source":"1,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"18.69",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2020/08/24",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"07:01:50.301",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,4"
 			},
 			{
 				"value":"07:01:50.4",
@@ -199,17 +204,39 @@
 				"value":"0.00779",
 				"derived":true,
 				"kind":"host",
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"velocity":[
 			{
 				"value":"2330",
 				"u_value":"km/s",
-				"source":"4"
+				"source":"5"
 			}
 		],
 		"photometry":[
+			{
+				"time":"58958.272",
+				"band":"G",
+				"instrument":"Astrometric",
+				"magnitude":"21.5",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"3"
+			},
+			{
+				"time":"59085.085",
+				"band":"G",
+				"e_magnitude":"0.2",
+				"instrument":"Astrometric",
+				"magnitude":"18.69",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"3"
+			},
 			{
 				"time":"59085.087",
 				"band":"G",
