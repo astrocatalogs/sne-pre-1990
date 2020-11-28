@@ -4,25 +4,31 @@
 		"name":"ASASSN-20op",
 		"sources":[
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/object/2020aary",
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
 				"alias":"1"
+			},
+			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"2"
 			},
 			{
 				"name":"ASAS-SN Supernovae",
 				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
-				"name":"ATel ##",
+				"name":"ATel",
 				"url":"http://www.astronomerstelegram.org/?read=####",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -30,47 +36,61 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-20op",
-				"source":"1,4"
+				"source":"2,5"
 			},
 			{
 				"value":"AT2020aary",
-				"source":"1,2,3,4"
+				"source":"2,3,4,5"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Ia",
+				"source":"2,5"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"110",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,5,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"-61:46:11.89",
 				"u_value":"degrees",
-				"source":"1,4"
+				"source":"2,5"
 			},
 			{
 				"value":"-61:46:12.36",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2020/11/22",
-				"source":"1,4"
+				"value":"2020/11/22.19",
+				"source":"2,3,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"1,4"
+				"source":"2,5"
 			}
 		],
 		"host":[
 			{
 				"value":"WISEA J032130.17-614613.0",
-				"source":"2,3"
+				"source":"2,3,4"
 			}
 		],
 		"hostdec":[
@@ -78,14 +98,20 @@
 				"value":"-61:46:13.0",
 				"derived":true,
 				"u_value":"degrees",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"hostoffsetang":[
 			{
 				"value":"0.42",
 				"u_value":"arcseconds",
-				"source":"2,3"
+				"source":"3,4"
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"0.22",
+				"source":"1,2,5,6"
 			}
 		],
 		"hostra":[
@@ -93,55 +119,117 @@
 				"value":"03:21:30.17",
 				"derived":true,
 				"u_value":"hours",
-				"source":"5"
+				"source":"6"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"117",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,5,6"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-18.7",
+				"derived":true,
+				"source":"1,2,5,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.6",
 				"derived":true,
-				"source":"1,4,5"
+				"source":"2,6"
+			}
+		],
+		"maxband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"2,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2020/11/21",
+				"value":"2020/11/22",
 				"derived":true,
-				"source":"1,4,5"
+				"source":"2,6"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-18.7",
+				"derived":true,
+				"source":"1,2,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"16.6",
 				"derived":true,
-				"source":"1,4,5"
+				"source":"2,6"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"2,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2020/11/21",
+				"value":"2020/11/22",
 				"derived":true,
-				"source":"1,4,5"
+				"source":"2,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"03:21:29.882",
 				"u_value":"hours",
-				"source":"1,4"
+				"source":"2,5"
 			},
 			{
 				"value":"03:21:29.88",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"3,4"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.026",
+				"source":"2,5"
+			}
+		],
+		"velocity":[
+			{
+				"value":"7700",
+				"u_value":"km/s",
+				"source":"6"
 			}
 		],
 		"photometry":[
 			{
-				"time":"59174.5",
-				"magnitude":"16.6",
+				"time":"59166.13",
+				"band":"g",
+				"instrument":"Cassius",
+				"magnitude":"18.6",
+				"telescope":"ASASSN-2",
 				"u_time":"MJD",
-				"source":"1,4"
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"59175.19",
+				"band":"g",
+				"instrument":"Paczynski",
+				"magnitude":"16.6",
+				"telescope":"ASASSN-3",
+				"u_time":"MJD",
+				"source":"2"
 			}
 		]
 	}

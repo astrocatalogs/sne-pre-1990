@@ -11,7 +11,7 @@
 			},
 			{
 				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/object/2020zqc",
+				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"2"
 			},
 			{
@@ -50,10 +50,15 @@
 				"value":"100",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4"
+				"source":"1,2,4"
 			}
 		],
 		"dec":[
+			{
+				"value":"-01:43:07.76",
+				"u_value":"degrees",
+				"source":"2"
+			},
 			{
 				"value":"-01:43:07.59",
 				"u_value":"degrees",
@@ -62,14 +67,80 @@
 		],
 		"discoverdate":[
 			{
-				"value":"2020/11/14",
-				"source":"2,3"
+				"value":"2020/11/14.208414",
+				"source":"2"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"ALeRCE, ZTF",
+				"source":"2"
+			},
+			{
 				"value":"ZTF",
 				"source":"2,3"
+			}
+		],
+		"host":[
+			{
+				"value":"SDSS J233650.27-014307.4",
+				"source":"2"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"100",
+				"derived":true,
+				"source":"1,2,4"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"-01:43:07.4",
+				"derived":true,
+				"u_value":"degrees",
+				"source":"4"
+			}
+		],
+		"hostlumdist":[
+			{
+				"value":"140",
+				"derived":true,
+				"source":"1,2,4"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"0.6613",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"2,4"
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"0.3113",
+				"source":"1,2,4"
+			}
+		],
+		"hostra":[
+			{
+				"value":"23:36:50.27",
+				"derived":true,
+				"u_value":"hours",
+				"source":"4"
+			}
+		],
+		"hostredshift":[
+			{
+				"value":"0.03",
+				"source":"2"
+			}
+		],
+		"hostvelocity":[
+			{
+				"value":"9000",
+				"source":"4"
 			}
 		],
 		"lumdist":[
@@ -77,52 +148,71 @@
 				"value":"140",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4"
+				"source":"1,2,4"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-16",
 				"derived":true,
-				"source":"1,2,3,4"
+				"source":"1,2,4"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"19.6",
+				"value":"19.44",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,4"
+			}
+		],
+		"maxband":[
+			{
+				"value":"r",
+				"derived":true,
+				"source":"2,4"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2020/11/13",
+				"value":"2020/11/20",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,4"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-16",
 				"derived":true,
-				"source":"1,2,3,4"
+				"source":"1,2,4"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"19.6",
+				"value":"19.44",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,4"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"r",
+				"derived":true,
+				"source":"2,4"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2020/11/13",
+				"value":"2020/11/20",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,4"
 			}
 		],
 		"ra":[
+			{
+				"value":"23:36:50.307",
+				"u_value":"hours",
+				"source":"2"
+			},
 			{
 				"value":"23:36:50.303",
 				"u_value":"hours",
@@ -130,6 +220,11 @@
 			}
 		],
 		"redshift":[
+			{
+				"value":"0.03",
+				"kind":"host",
+				"source":"2"
+			},
 			{
 				"value":"0.03",
 				"source":"2,3"
@@ -144,10 +239,56 @@
 		],
 		"photometry":[
 			{
-				"time":"59166.5",
-				"magnitude":"19.6",
+				"time":"59164.2326852",
+				"band":"g",
+				"instrument":"ZTF-Cam",
+				"magnitude":"19.7246",
+				"observer":"Robot",
+				"telescope":"P48",
 				"u_time":"MJD",
-				"source":"2,3"
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"59167.2084144",
+				"band":"r",
+				"e_magnitude":"0.156163",
+				"instrument":"ZTF-Cam",
+				"magnitude":"19.6325",
+				"observer":"Robot",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"59171.1697106",
+				"band":"g",
+				"instrument":"ZTF-Cam",
+				"magnitude":"20.4118",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"59171.1918981",
+				"band":"r",
+				"e_magnitude":"0.1",
+				"instrument":"ZTF-Cam",
+				"magnitude":"19.51",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"59173.2197222",
+				"band":"r",
+				"e_magnitude":"0.11",
+				"instrument":"ZTF-Cam",
+				"magnitude":"19.44",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
 			}
 		]
 	}

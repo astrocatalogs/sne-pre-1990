@@ -11,7 +11,7 @@
 			},
 			{
 				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/object/2020aaix",
+				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"2"
 			},
 			{
@@ -20,7 +20,7 @@
 				"alias":"3"
 			},
 			{
-				"name":"ATel ##",
+				"name":"ATel",
 				"url":"http://www.astronomerstelegram.org/?read=####",
 				"alias":"4"
 			},
@@ -54,7 +54,7 @@
 				"value":"280.1",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4,5,6"
+				"source":"1,2,6"
 			}
 		],
 		"dec":[
@@ -71,8 +71,8 @@
 		],
 		"discoverdate":[
 			{
-				"value":"2020/11/16",
-				"source":"2,5"
+				"value":"2020/11/16.5",
+				"source":"2"
 			}
 		],
 		"discoverer":[
@@ -84,7 +84,21 @@
 		"host":[
 			{
 				"value":"CGCG 241-080 NED02",
-				"source":"3,4"
+				"source":"2,3,4"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"280.1",
+				"derived":true,
+				"source":"1,2,6"
+			}
+		],
+		"hostlumdist":[
+			{
+				"value":"298.15",
+				"derived":true,
+				"source":"1,2,6"
 			}
 		],
 		"hostoffsetang":[
@@ -94,54 +108,80 @@
 				"source":"3,4"
 			}
 		],
+		"hostredshift":[
+			{
+				"value":"0.06427",
+				"source":"2"
+			}
+		],
+		"hostvelocity":[
+			{
+				"value":"18650",
+				"source":"6"
+			}
+		],
 		"lumdist":[
 			{
 				"value":"298.15",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4,5,6"
+				"source":"1,2,6"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-19.805",
 				"derived":true,
-				"source":"1,2,3,4,5,6"
+				"source":"1,2,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.5",
 				"derived":true,
-				"source":"2,5,6"
+				"source":"2,6"
+			}
+		],
+		"maxband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"2,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2020/11/15",
+				"value":"2020/11/16",
 				"derived":true,
-				"source":"2,5,6"
+				"source":"2,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-19.872",
 				"derived":true,
-				"source":"1,2,3,4,5,6"
+				"source":"1,2,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.5",
 				"derived":true,
-				"source":"2,5,6"
+				"source":"2,6"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"2,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2020/11/15",
+				"value":"2020/11/16",
 				"derived":true,
-				"source":"2,5,6"
+				"source":"2,6"
 			}
 		],
 		"ra":[
@@ -159,6 +199,11 @@
 		"redshift":[
 			{
 				"value":"0.06427",
+				"kind":"host",
+				"source":"2"
+			},
+			{
+				"value":"0.06427",
 				"source":"2,3,4,5"
 			}
 		],
@@ -171,10 +216,23 @@
 		],
 		"photometry":[
 			{
-				"time":"59168.5",
-				"magnitude":"17.5",
+				"time":"59165.43",
+				"band":"g",
+				"instrument":"Leavitt",
+				"magnitude":"18",
+				"telescope":"ASASSN-4",
 				"u_time":"MJD",
-				"source":"2,5"
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"59169.5",
+				"band":"g",
+				"instrument":"Leavitt",
+				"magnitude":"17.5",
+				"telescope":"ASASSN-4",
+				"u_time":"MJD",
+				"source":"2"
 			}
 		]
 	}
