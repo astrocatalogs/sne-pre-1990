@@ -4,15 +4,20 @@
 		"name":"AT2020yjc",
 		"sources":[
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"1"
+			},
+			{
 				"name":"Pan-STARRS 3Pi",
 				"url":"https://wis-tns.weizmann.ac.il/object/2020yjc",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,85 +25,108 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2020yjc",
-				"source":"1,2"
+				"source":"1,2,3"
 			},
 			{
 				"value":"PS20klf",
-				"source":"1,2"
+				"source":"1,2,3"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Candidate",
-				"source":"3"
+				"source":"4"
 			}
 		],
 		"dec":[
 			{
 				"value":"+35:01:39.95",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,2,3"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2020/10/17",
-				"source":"1,2"
+				"value":"2020/10/17.233",
+				"source":"1"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"YSE",
+				"source":"1"
+			},
+			{
 				"value":"PS1",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"20.9",
+				"value":"20.88",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,4"
+			}
+		],
+		"maxband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"1,4"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2020/10/16",
+				"value":"2020/10/17",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,4"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"20.9",
+				"value":"20.88",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,4"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"1,4"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2020/10/16",
+				"value":"2020/10/17",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,4"
 			}
 		],
 		"ra":[
 			{
 				"value":"22:29:50.428",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"1,2,3"
 			}
 		],
 		"photometry":[
 			{
-				"time":"59138.5",
-				"magnitude":"20.9",
+				"time":"59139.233",
+				"band":"g",
+				"e_magnitude":"0.26",
+				"instrument":"GPC1",
+				"magnitude":"20.88",
+				"observer":"Robot",
+				"telescope":"PS1",
 				"u_time":"MJD",
-				"source":"1,2"
+				"source":"1"
 			}
 		]
 	}
