@@ -11,7 +11,7 @@
 			},
 			{
 				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/object/2020kej",
+				"url":"https://www.wis-tns.org/object/2020kej",
 				"alias":"2"
 			},
 			{
@@ -20,10 +20,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 28892",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=28892",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,31 +42,31 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2020kej",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			},
 			{
 				"value":"AT2020kej",
-				"source":"2,4"
+				"source":"2,6"
 			},
 			{
 				"value":"ZTF20aazymxi",
-				"source":"2,4"
+				"source":"2,6"
 			},
 			{
 				"value":"Gaia20dgd",
-				"source":"2,4"
+				"source":"2,5,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			}
 		],
 		"comovingdist":[
@@ -63,26 +74,26 @@
 				"value":"200",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"dec":[
 			{
 				"value":"+78:18:52.56",
 				"u_value":"degrees",
-				"source":"2,3,4"
+				"source":"2,3,5,6"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2020/05/17",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ZTF",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"lumdist":[
@@ -90,88 +101,88 @@
 				"value":"180",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-19",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.83",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2020/06/03",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-17",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,6,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"19.47",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,7"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,7"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2020/05/17",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"15:01:40.814",
 				"u_value":"hours",
-				"source":"2,4"
+				"source":"2,6"
 			},
 			{
 				"value":"15:01:40.8",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.04",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"velocity":[
 			{
 				"value":"10000",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"7"
 			}
 		],
 		"photometry":[
@@ -248,6 +259,109 @@
 				"source":"3"
 			},
 			{
+				"time":"59083.7799",
+				"band":"g",
+				"magnitude":"21.2408",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59083.7834",
+				"band":"V",
+				"e_magnitude":"0.1283",
+				"magnitude":"18.9803",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59083.787",
+				"band":"i",
+				"e_magnitude":"0.0895",
+				"magnitude":"18.4082",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59083.7905",
+				"band":"r",
+				"magnitude":"21.6409",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59083.7941",
+				"band":"g",
+				"e_magnitude":"0.2551",
+				"magnitude":"20.2516",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59083.7976",
+				"band":"V",
+				"e_magnitude":"0.0948",
+				"magnitude":"18.5812",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59083.8011",
+				"band":"r",
+				"e_magnitude":"0.1152",
+				"magnitude":"18.7049",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59083.8047",
+				"band":"r",
+				"magnitude":"21.6738",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59083.8082",
+				"band":"g",
+				"magnitude":"21.8788",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59083.8118",
+				"band":"V",
+				"e_magnitude":"0.0926",
+				"magnitude":"18.5271",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59083.8153",
+				"band":"r",
+				"e_magnitude":"0.0973",
+				"magnitude":"19.1522",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59083.8188",
+				"band":"r",
+				"magnitude":"21.5373",
+				"observatory":"Goran Damljanovic, A",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
 				"time":"59084.201",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -266,6 +380,141 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"59084.7972",
+				"band":"B",
+				"e_magnitude":"0.0705",
+				"magnitude":"19.7967",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59084.8001",
+				"band":"V",
+				"e_magnitude":"0.0351",
+				"magnitude":"19.025",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59084.8026",
+				"band":"r",
+				"e_magnitude":"0.0377",
+				"magnitude":"18.9926",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59084.8048",
+				"band":"r",
+				"e_magnitude":"0.0605",
+				"magnitude":"18.8147",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59084.807",
+				"band":"B",
+				"e_magnitude":"0.0665",
+				"magnitude":"19.7785",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59084.8098",
+				"band":"V",
+				"e_magnitude":"0.036",
+				"magnitude":"18.8104",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59084.8124",
+				"band":"r",
+				"e_magnitude":"0.0362",
+				"magnitude":"18.934",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59084.8146",
+				"band":"r",
+				"e_magnitude":"0.067",
+				"magnitude":"19.0667",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59084.8167",
+				"band":"B",
+				"e_magnitude":"0.0603",
+				"magnitude":"19.7422",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59084.8196",
+				"band":"V",
+				"e_magnitude":"0.0355",
+				"magnitude":"18.9678",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59084.8221",
+				"band":"r",
+				"e_magnitude":"0.0351",
+				"magnitude":"19.06",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59084.8243",
+				"band":"r",
+				"e_magnitude":"0.0683",
+				"magnitude":"19.0782",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59084.8277",
+				"band":"r",
+				"e_magnitude":"0.1663",
+				"magnitude":"19.0131",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59084.8298",
+				"band":"r",
+				"e_magnitude":"0.1391",
+				"magnitude":"18.9466",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"59084.832",
+				"band":"r",
+				"e_magnitude":"0.1267",
+				"magnitude":"18.644",
+				"observatory":"ASV1.4 Goran Damljan",
+				"u_time":"MJD",
+				"source":"4,5"
 			},
 			{
 				"time":"59117.938",

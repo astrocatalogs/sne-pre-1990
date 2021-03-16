@@ -11,19 +11,24 @@
 			},
 			{
 				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/object/2020uxz",
+				"url":"https://www.wis-tns.org/object/2020uxz",
 				"alias":"2"
 			},
 			{
-				"name":"Hubble Pointings",
-				"url":"http://archive.stsci.edu/hst/search.php",
+				"name":"Gaia Photometric Science Alerts",
+				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
 				"alias":"3"
+			},
+			{
+				"name":"Hubble Pointings",
+				"url":"https://archive.stsci.edu/hst/search.php",
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,35 +36,39 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2020uxz",
-				"source":"2,4"
+				"source":"2,3,5"
 			},
 			{
 				"value":"AT2020uxz",
-				"source":"2,3,4"
+				"source":"2,4,5"
 			},
 			{
 				"value":"ATLAS20bcma",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"ZTF20achlced",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"PS20idl",
-				"source":"2,4"
+				"source":"2,5"
+			},
+			{
+				"value":"Gaia20fty",
+				"source":"2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,4"
+				"source":"2,3,5"
 			}
 		],
 		"comovingdist":[
@@ -67,32 +76,37 @@
 				"value":"36.42",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"dec":[
 			{
-				"value":"+12:55:17.31",
+				"value":"+12:55:17.26",
 				"u_value":"degrees",
-				"source":"2,4"
+				"source":"2,5"
+			},
+			{
+				"value":"+12:55:17.4",
+				"u_value":"degrees",
+				"source":"3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2020/10/05",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Koichi Itagaki",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 514",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"lumdist":[
@@ -100,79 +114,102 @@
 				"value":"36.724",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-19.316",
+				"value":"-19.076",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"13.5",
+				"value":"13.74",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,6"
+			}
+		],
+		"maxband":[
+			{
+				"value":"w",
+				"derived":true,
+				"source":"2,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2020/10/22",
+				"value":"2020/10/16",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-17.225",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"15.6",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2020/10/07",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"ra":[
 			{
+				"value":"01:24:06.890",
+				"u_value":"hours",
+				"source":"2,5"
+			},
+			{
 				"value":"01:24:06.888",
 				"u_value":"hours",
-				"source":"2,4"
+				"source":"3"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.008246",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"2462",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"photometry":[
+			{
+				"time":"59063.096",
+				"band":"G",
+				"instrument":"Astrometric",
+				"magnitude":"21.5",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"2"
+			},
 			{
 				"time":"59121.3088194",
 				"band":"g",
@@ -295,10 +332,45 @@
 				"source":"2"
 			},
 			{
-				"time":"59144.5",
-				"magnitude":"13.5",
+				"time":"59200.314",
+				"band":"G",
+				"e_magnitude":"0.2",
+				"instrument":"Astrometric",
+				"magnitude":"16.09",
+				"observer":"Robot",
+				"telescope":"Gaia",
 				"u_time":"MJD",
-				"source":"2,4"
+				"source":"2"
+			},
+			{
+				"time":"59200.315",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"16.09",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"59200.389",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"16.10",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"59223.383",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"16.77",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
 			}
 		],
 		"spectra":[

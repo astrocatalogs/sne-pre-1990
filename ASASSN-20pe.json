@@ -10,9 +10,25 @@
 				"alias":"1"
 			},
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/",
+				"name":"ATel 14250",
+				"url":"http://www.astronomerstelegram.org/?read=14250",
 				"alias":"2"
+			},
+			{
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"alias":"3"
+			},
+			{
+				"name":"Transient Name Server",
+				"url":"https://www.wis-tns.org/",
+				"alias":"4"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,17 +36,17 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-20pe",
-				"source":"2"
+				"source":"2,5"
 			},
 			{
 				"value":"AT2020aboy",
-				"source":"2"
+				"source":"2,3,4,5"
 			}
 		],
 		"comovingdist":[
@@ -38,39 +54,37 @@
 				"value":"165.52",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3"
+				"source":"1,2,3,5,6"
 			}
 		],
 		"dec":[
 			{
-				"value":"-57:41:49.45",
+				"value":"-57:41:51.26",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,5"
+			},
+			{
+				"value":"-57:41:51.36",
+				"u_value":"degrees",
+				"source":"2,3"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2020/12/05.13",
-				"source":"2"
+				"value":"2020/12/05",
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"2"
+				"source":"2,5"
 			}
 		],
 		"host":[
 			{
 				"value":"2MASX J02310876-5741509",
-				"source":"2"
-			}
-		],
-		"hostcomovingdist":[
-			{
-				"value":"165.52",
-				"derived":true,
-				"source":"1,2,3"
+				"source":"2,3"
 			}
 		],
 		"hostdec":[
@@ -78,28 +92,20 @@
 				"value":"-57:41:50.9",
 				"derived":true,
 				"u_value":"degrees",
-				"source":"3"
-			}
-		],
-		"hostlumdist":[
-			{
-				"value":"171.767",
-				"derived":true,
-				"source":"1,2,3"
+				"source":"6"
 			}
 		],
 		"hostoffsetang":[
 			{
-				"value":"1.546",
-				"derived":true,
+				"value":"1.91",
 				"u_value":"arcseconds",
 				"source":"2,3"
 			}
 		],
 		"hostoffsetdist":[
 			{
-				"value":"1.195",
-				"source":"1,2,3"
+				"value":"1.48",
+				"source":"1,2,3,5,6"
 			}
 		],
 		"hostra":[
@@ -107,19 +113,7 @@
 				"value":"02:31:08.76",
 				"derived":true,
 				"u_value":"hours",
-				"source":"3"
-			}
-		],
-		"hostredshift":[
-			{
-				"value":"0.037733",
-				"source":"2"
-			}
-		],
-		"hostvelocity":[
-			{
-				"value":"11099",
-				"source":"3"
+				"source":"6"
 			}
 		],
 		"lumdist":[
@@ -127,84 +121,88 @@
 				"value":"171.767",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3"
+				"source":"1,2,3,5,6"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-18.4345",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,2,3,5,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.7",
 				"derived":true,
-				"source":"2,3"
+				"source":"4,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,3"
+				"source":"4,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2020/12/05",
 				"derived":true,
-				"source":"2,3"
+				"source":"4,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-18.4747",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,2,3,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.7",
 				"derived":true,
-				"source":"2,3"
+				"source":"4,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,3"
+				"source":"4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2020/12/05",
 				"derived":true,
-				"source":"2,3"
+				"source":"4,6"
 			}
 		],
 		"ra":[
 			{
-				"value":"02:31:08.693",
+				"value":"02:31:08.717",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,5"
+			},
+			{
+				"value":"02:31:08.712",
+				"u_value":"hours",
+				"source":"2,3"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.037733",
-				"kind":"host",
-				"source":"2"
+				"source":"2,3,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"11099",
 				"u_value":"km/s",
-				"source":"3"
+				"source":"6"
 			}
 		],
 		"photometry":[
@@ -216,7 +214,7 @@
 				"telescope":"ASASSN-3",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"59188.13",
@@ -225,7 +223,7 @@
 				"magnitude":"17.7",
 				"telescope":"ASASSN-3",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"4"
 			}
 		]
 	}
