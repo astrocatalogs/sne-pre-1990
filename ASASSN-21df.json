@@ -4,15 +4,20 @@
 		"name":"ASASSN-21df",
 		"sources":[
 			{
-				"name":"Transient Name Server",
-				"url":"https://www.wis-tns.org/object/2021fmr",
+				"name":"ATel 14461",
+				"url":"http://www.astronomerstelegram.org/?read=14461",
 				"alias":"1"
+			},
+			{
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,22 +25,27 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-21df",
-				"source":"1,2"
+				"source":"1,3"
 			},
 			{
 				"value":"AT2021fmr",
-				"source":"1,2"
+				"source":"1,2,3"
 			}
 		],
 		"dec":[
 			{
-				"value":"-49:12:54.97",
+				"value":"-49:12:56.35",
+				"u_value":"degrees",
+				"source":"1,3"
+			},
+			{
+				"value":"-49:12:56.16",
 				"u_value":"degrees",
 				"source":"1,2"
 			}
@@ -43,46 +53,80 @@
 		"discoverdate":[
 			{
 				"value":"2021/03/12",
-				"source":"1,2"
+				"source":"1,3"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
+				"source":"1,3"
+			}
+		],
+		"host":[
+			{
+				"value":"WISEA J032930.07-491252.9",
 				"source":"1,2"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"-49:12:52.9",
+				"derived":true,
+				"u_value":"degrees",
+				"source":"4"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"4.28",
+				"u_value":"arcseconds",
+				"source":"1,2"
+			}
+		],
+		"hostra":[
+			{
+				"value":"03:29:30.07",
+				"derived":true,
+				"u_value":"hours",
+				"source":"4"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.3",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,3,4"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2021/03/11",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,3,4"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.3",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,3,4"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2021/03/11",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,3,4"
 			}
 		],
 		"ra":[
 			{
-				"value":"03:29:29.630",
+				"value":"03:29:29.699",
+				"u_value":"hours",
+				"source":"1,3"
+			},
+			{
+				"value":"03:29:29.712",
 				"u_value":"hours",
 				"source":"1,2"
 			}
@@ -92,7 +136,7 @@
 				"time":"59284.5",
 				"magnitude":"17.3",
 				"u_time":"MJD",
-				"source":"1,2"
+				"source":"1,3"
 			}
 		]
 	}
