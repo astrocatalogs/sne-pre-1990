@@ -19,10 +19,15 @@
 				"alias":"3"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://www.wis-tns.org/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -30,21 +35,21 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-21bu",
-				"source":"1,4"
+				"source":"1,5"
 			},
 			{
 				"value":"AT2021dju",
-				"source":"1,2,3,4"
+				"source":"1,2,3,4,5"
 			},
 			{
 				"value":"Gaia21bdx",
-				"source":"1,4"
+				"source":"1,5"
 			}
 		],
 		"claimedtype":[
@@ -57,7 +62,7 @@
 			{
 				"value":"-58:11:50.11",
 				"u_value":"degrees",
-				"source":"1,4"
+				"source":"1,5"
 			},
 			{
 				"value":"-58:11:49.92",
@@ -68,13 +73,13 @@
 		"discoverdate":[
 			{
 				"value":"2021/02/19",
-				"source":"1,4"
+				"source":"1,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"1,4"
+				"source":"1,5"
 			}
 		],
 		"host":[
@@ -88,7 +93,7 @@
 				"value":"-58:11:47.5",
 				"derived":true,
 				"u_value":"degrees",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"hostoffsetang":[
@@ -103,49 +108,56 @@
 				"value":"05:03:30.45",
 				"derived":true,
 				"u_value":"hours",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.8",
 				"derived":true,
-				"source":"1,4,5"
+				"source":"4,6"
+			}
+		],
+		"maxband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"4,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2021/02/18",
+				"value":"2021/02/19",
 				"derived":true,
-				"source":"1,4,5"
+				"source":"4,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"17.83",
+				"value":"17.8",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,6"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2021/02/28",
+				"value":"2021/02/19",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"05:03:30.064",
 				"u_value":"hours",
-				"source":"1,4"
+				"source":"1,5"
 			},
 			{
 				"value":"05:03:30.072",
@@ -155,17 +167,52 @@
 		],
 		"photometry":[
 			{
-				"time":"59263.5",
-				"magnitude":"17.8",
+				"time":"59239.316",
+				"band":"G",
+				"instrument":"Astrometric",
+				"magnitude":"21.5",
+				"observer":"Robot",
+				"telescope":"Gaia",
 				"u_time":"MJD",
-				"source":"1,4"
+				"upperlimit":true,
+				"source":"4"
+			},
+			{
+				"time":"59254.88",
+				"band":"g",
+				"instrument":"Payne-Gaposchkin",
+				"magnitude":"18.6",
+				"telescope":"ASASSN-5",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
+			},
+			{
+				"time":"59264.93",
+				"band":"g",
+				"instrument":"Payne-Gaposchkin",
+				"magnitude":"17.8",
+				"telescope":"ASASSN-5",
+				"u_time":"MJD",
+				"source":"4"
+			},
+			{
+				"time":"59273.465",
+				"band":"G",
+				"e_magnitude":"0.2",
+				"instrument":"Astrometric",
+				"magnitude":"17.85",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"59273.466",
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"17.85",
+				"magnitude":"17.84",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
@@ -175,7 +222,17 @@
 				"band":"G",
 				"e_magnitude":"0.0",
 				"instrument":"Astrometric",
-				"magnitude":"17.83",
+				"magnitude":"17.82",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"59298.782",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.99",
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"

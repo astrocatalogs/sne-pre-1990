@@ -20,10 +20,15 @@
 				"alias":"3"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://www.wis-tns.org/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,27 +36,27 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2021foa",
-				"source":"2,3,4"
+				"source":"2,3,4,5"
 			},
 			{
 				"value":"AT2021foa",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"ASASSN-21dg",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"IIn",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"comovingdist":[
@@ -59,14 +64,14 @@
 				"value":"37.04",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4,5"
+				"source":"1,2,3,5,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"-17:15:26.02",
 				"u_value":"degrees",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"-17:15:25.92",
@@ -77,19 +82,19 @@
 		"discoverdate":[
 			{
 				"value":"2021/03/15",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"host":[
 			{
 				"value":"IC 863",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"IC 0863",
@@ -108,56 +113,70 @@
 				"value":"37.352",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4,5"
+				"source":"1,2,3,5,6"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-16.952",
+				"value":"-17.312",
 				"derived":true,
-				"source":"1,2,3,4,5"
+				"source":"1,2,3,5,6"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"15.9",
+				"value":"15.54",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"4,6"
+			}
+		],
+		"maxband":[
+			{
+				"value":"w",
+				"derived":true,
+				"source":"4,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2021/03/14",
+				"value":"2021/03/18",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"4,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-16.962",
 				"derived":true,
-				"source":"1,2,3,4,5"
+				"source":"1,2,3,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"15.9",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"4,6"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2021/03/14",
+				"value":"2021/03/15",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"4,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"13:17:12.370",
 				"u_value":"hours",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"13:17:12.48",
@@ -168,22 +187,67 @@
 		"redshift":[
 			{
 				"value":"0.008386",
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"2504",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"photometry":[
 			{
-				"time":"59287.5",
-				"magnitude":"15.9",
+				"time":"59278.41",
+				"band":"g",
+				"instrument":"Leavitt",
+				"magnitude":"17.9",
+				"telescope":"ASASSN-4",
 				"u_time":"MJD",
-				"source":"2,4"
+				"upperlimit":true,
+				"source":"4"
+			},
+			{
+				"time":"59279.5649884",
+				"band":"orange",
+				"instrument":"ACAM1",
+				"magnitude":"19.51",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
+			},
+			{
+				"time":"59288.45",
+				"band":"g",
+				"instrument":"Leavitt",
+				"magnitude":"15.9",
+				"telescope":"ASASSN-4",
+				"u_time":"MJD",
+				"source":"4"
+			},
+			{
+				"time":"59288.452",
+				"band":"orange",
+				"e_magnitude":"0.018",
+				"instrument":"ACAM1",
+				"magnitude":"15.896",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
+				"u_time":"MJD",
+				"source":"4"
+			},
+			{
+				"time":"59291.494",
+				"band":"w",
+				"instrument":"GPC1",
+				"magnitude":"15.54",
+				"observer":"Robot",
+				"telescope":"PS1",
+				"u_time":"MJD",
+				"source":"4"
 			}
 		]
 	}
