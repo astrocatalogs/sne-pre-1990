@@ -15,25 +15,41 @@
 				"alias":"2"
 			},
 			{
-				"name":"ASAS-SN Supernovae",
-				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"name":"Gaia Photometric Science Alerts",
+				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
 				"alias":"3"
 			},
 			{
-				"name":"ATel ##",
-				"url":"http://www.astronomerstelegram.org/?read=####",
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
 				"alias":"4"
+			},
+			{
+				"name":"ATel 14579",
+				"url":"http://www.astronomerstelegram.org/?read=14579",
+				"alias":"5"
 			},
 			{
 				"name":"ATel https://wis-tns.weizmann.ac.il/object/2021hfu",
 				"url":"https://wis-tns.weizmann.ac.il/object/2021hfu",
-				"alias":"5"
+				"alias":"6"
+			},
+			{
+				"name":"CPCS Alert 29183",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=29183",
+				"alias":"7"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"8"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"6"
+				"alias":"9"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -41,27 +57,31 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"7"
+				"alias":"10"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2021hfu",
-				"source":"2,3,4,6"
+				"source":"2,3,4,5,9"
 			},
 			{
 				"value":"AT2021hfu",
-				"source":"2,6"
+				"source":"2,9"
 			},
 			{
 				"value":"ASASSN-21ek",
-				"source":"2,6"
+				"source":"2,9"
+			},
+			{
+				"value":"Gaia21bxh",
+				"source":"2,8,9"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,3,5,6"
+				"source":"2,3,4,6,9"
 			}
 		],
 		"comovingdist":[
@@ -69,44 +89,49 @@
 				"value":"77.318",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4,6,7"
+				"source":"1,2,4,5,9,10"
 			}
 		],
 		"dec":[
 			{
-				"value":"+34:55:56.82",
+				"value":"+34:55:56.13",
 				"u_value":"degrees",
-				"source":"2,6"
+				"source":"2,9"
+			},
+			{
+				"value":"+34:55:56.28",
+				"u_value":"degrees",
+				"source":"3,8"
 			},
 			{
 				"value":"+34:55:56.64",
 				"u_value":"degrees",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2021/03/29",
-				"source":"2,6"
+				"source":"2,9"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"2,6"
+				"source":"2,9"
 			}
 		],
 		"host":[
 			{
 				"value":"CGCG 178-036",
-				"source":"2,3,4,6"
+				"source":"2,4,5,9"
 			}
 		],
 		"hostoffsetang":[
 			{
 				"value":"0.36",
 				"u_value":"arcseconds",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		],
 		"lumdist":[
@@ -114,74 +139,93 @@
 				"value":"78.6741",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4,6,7"
+				"source":"1,2,4,5,9,10"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-18.4603",
+				"value":"-20.1603",
 				"derived":true,
-				"source":"1,2,3,4,6,7"
+				"source":"1,2,4,5,9,10"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"16",
+				"value":"14.3",
 				"derived":true,
-				"source":"2,6,7"
+				"source":"7,8,10"
+			}
+		],
+		"maxband":[
+			{
+				"value":"V",
+				"derived":true,
+				"source":"7,8,10"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2021/03/28",
+				"value":"2021/04/23",
 				"derived":true,
-				"source":"2,6,7"
+				"source":"7,8,10"
 			}
 		],
 		"maxvisualabsmag":[
 			{
-				"value":"-18.4792",
+				"value":"-20.1792",
 				"derived":true,
-				"source":"1,2,3,4,6,7"
+				"source":"1,2,4,5,9,10"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"16",
+				"value":"14.3",
 				"derived":true,
-				"source":"2,6,7"
+				"source":"7,8,10"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"V",
+				"derived":true,
+				"source":"7,8,10"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2021/03/28",
+				"value":"2021/04/23",
 				"derived":true,
-				"source":"2,6,7"
+				"source":"7,8,10"
 			}
 		],
 		"ra":[
 			{
-				"value":"08:13:18.449",
+				"value":"08:13:18.370",
 				"u_value":"hours",
-				"source":"2,6"
+				"source":"2,9"
+			},
+			{
+				"value":"08:13:18.48",
+				"u_value":"hours",
+				"source":"3,8"
 			},
 			{
 				"value":"08:13:18.24",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.017542",
-				"source":"2,3,4,6"
+				"source":"2,4,5,9"
 			}
 		],
 		"velocity":[
 			{
 				"value":"5212.8",
 				"u_value":"km/s",
-				"source":"7"
+				"source":"10"
 			}
 		],
 		"photometry":[
@@ -189,7 +233,36 @@
 				"time":"59301.5",
 				"magnitude":"16.0",
 				"u_time":"MJD",
-				"source":"2,6"
+				"source":"2,9"
+			},
+			{
+				"time":"59319.759",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"16.13",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"59319.833",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"16.21",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"59327.9629",
+				"band":"V",
+				"e_magnitude":"0.0184849",
+				"magnitude":"14.2975",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"7,8"
 			}
 		]
 	}
