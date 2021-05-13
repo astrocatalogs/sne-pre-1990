@@ -4,9 +4,21 @@
 		"name":"Gaia21cal",
 		"sources":[
 			{
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
+				"alias":"1"
+			},
+			{
 				"name":"Gaia Photometric Science Alerts",
 				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
-				"alias":"1"
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -14,85 +26,152 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"2"
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia21cal",
-				"source":"1"
+				"source":"2,3"
+			},
+			{
+				"value":"AT2021kmh",
+				"source":"2,3"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Candidate",
-				"source":"1"
+				"source":"2"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"215.37",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,3,4"
 			}
 		],
 		"dec":[
 			{
+				"value":"-42:38:59.61",
+				"u_value":"degrees",
+				"source":"2,3"
+			},
+			{
 				"value":"-42:38:59.64",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2021/04/23",
+				"source":"2,3"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"Gaia",
+				"source":"2,3"
+			}
+		],
+		"host":[
+			{
+				"value":"LEDA 135473",
+				"source":"2,3"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"225.972",
 				"derived":true,
-				"source":"1,2"
+				"u_value":"Mpc",
+				"source":"1,2,3,4"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-17.8181",
+				"derived":true,
+				"source":"1,2,3,4"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"18.93",
+				"value":"18.9",
 				"derived":true,
-				"source":"1,2"
-			}
-		],
-		"maxband":[
-			{
-				"value":"G",
-				"derived":true,
-				"source":"1,2"
+				"source":"2,3,4"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2021/04/23",
+				"value":"2021/04/22",
 				"derived":true,
-				"source":"1,2"
+				"source":"2,3,4"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-17.8403",
+				"derived":true,
+				"source":"1,2,3,4"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"18.93",
 				"derived":true,
-				"source":"1,2"
+				"source":"2,4"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"1,2"
+				"source":"2,4"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2021/04/23",
 				"derived":true,
-				"source":"1,2"
+				"source":"2,4"
 			}
 		],
 		"ra":[
 			{
+				"value":"22:55:47.823",
+				"u_value":"hours",
+				"source":"2,3"
+			},
+			{
 				"value":"22:55:47.76",
 				"u_value":"hours",
-				"source":"1"
+				"source":"2"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.049231",
+				"source":"2,3"
+			}
+		],
+		"velocity":[
+			{
+				"value":"14396",
+				"u_value":"km/s",
+				"source":"4"
 			}
 		],
 		"photometry":[
+			{
+				"time":"59326.5",
+				"magnitude":"18.9",
+				"u_time":"MJD",
+				"source":"2,3"
+			},
 			{
 				"time":"59327.636",
 				"band":"G",
@@ -101,7 +180,7 @@
 				"magnitude":"18.93",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"59327.710",
@@ -111,7 +190,7 @@
 				"magnitude":"18.93",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"1"
+				"source":"2"
 			}
 		]
 	}
