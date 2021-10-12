@@ -15,10 +15,20 @@
 				"alias":"2"
 			},
 			{
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"alias":"3"
+			},
+			{
+				"name":"ATel ##",
+				"url":"http://www.astronomerstelegram.org/?read=####",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,17 +36,17 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-21si",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"AT2021aagd",
-				"source":"2,3"
+				"source":"2,3,4,5"
 			}
 		],
 		"comovingdist":[
@@ -44,32 +54,48 @@
 				"value":"91.524",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4"
+				"source":"1,2,3,4,5,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"-59:56:00.78",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,5"
+			},
+			{
+				"value":"-59:56:02.04",
+				"u_value":"degrees",
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2021/10/02",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"host":[
 			{
 				"value":"ESO 138-G27",
-				"source":"2,3"
+				"source":"2,5"
+			},
+			{
+				"value":"ESO 138-G 027",
+				"source":"3,4"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"9.26",
+				"u_value":"arcseconds",
+				"source":"3,4"
 			}
 		],
 		"lumdist":[
@@ -77,69 +103,74 @@
 				"value":"93.4263",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4"
+				"source":"1,2,3,4,5,6"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-17.93",
 				"derived":true,
-				"source":"1,2,3,4"
+				"source":"1,2,3,4,5,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.9",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2021/10/01",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-17.9523",
 				"derived":true,
-				"source":"1,2,3,4"
+				"source":"1,2,3,4,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"16.9",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2021/10/01",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"17:26:42.955",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
+			},
+			{
+				"value":"17:26:42.48",
+				"u_value":"hours",
+				"source":"3,4"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.020781",
-				"source":"2,3"
+				"source":"2,3,4,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"6165.3",
 				"u_value":"km/s",
-				"source":"4"
+				"source":"6"
 			}
 		],
 		"photometry":[
@@ -147,7 +178,7 @@
 				"time":"59488.5",
 				"magnitude":"16.9",
 				"u_time":"MJD",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		]
 	}
