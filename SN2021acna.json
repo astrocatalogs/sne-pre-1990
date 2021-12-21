@@ -15,10 +15,15 @@
 				"alias":"2"
 			},
 			{
+				"name":"Gaia Photometric Science Alerts",
+				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,27 +31,31 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2021acna",
-				"source":"2,3"
+				"source":"2,3,4"
 			},
 			{
 				"value":"AT2021acna",
-				"source":"2,3"
+				"source":"2,4"
 			},
 			{
 				"value":"ZTF21acjoskd",
-				"source":"2,3"
+				"source":"2,4"
+			},
+			{
+				"value":"Gaia21fmp",
+				"source":"2,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"II",
-				"source":"2,3"
+				"source":"2,3,4"
 			}
 		],
 		"comovingdist":[
@@ -54,32 +63,37 @@
 				"value":"12.57",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4"
+				"source":"1,2,4,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"+55:18:58.68",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,3,4"
+			},
+			{
+				"value":"+55:18:58.54",
+				"u_value":"degrees",
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2021/10/30",
-				"source":"2,3"
+				"source":"2,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ZTF",
-				"source":"2,3"
+				"source":"2,4"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 3972",
-				"source":"2,3"
+				"source":"2,4"
 			}
 		],
 		"lumdist":[
@@ -87,69 +101,93 @@
 				"value":"12.61",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4"
+				"source":"1,2,4,5"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-11.1",
+				"value":"-12.39",
 				"derived":true,
-				"source":"1,2,3,4"
+				"source":"1,2,4,5"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"19.4",
+				"value":"18.11",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,5"
+			}
+		],
+		"maxband":[
+			{
+				"value":"G",
+				"derived":true,
+				"source":"3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2021/10/29",
+				"value":"2021/12/10",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,5"
 			}
 		],
 		"maxvisualabsmag":[
 			{
-				"value":"-11.103",
+				"value":"-12.393",
 				"derived":true,
-				"source":"1,2,3,4"
+				"source":"1,2,4,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"19.4",
+				"value":"18.11",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,5"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"G",
+				"derived":true,
+				"source":"3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2021/10/29",
+				"value":"2021/12/10",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"11:55:47.757",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,4"
+			},
+			{
+				"value":"11:55:47.761",
+				"u_value":"hours",
+				"source":"2,4"
+			},
+			{
+				"value":"11:55:47.76",
+				"u_value":"hours",
+				"source":"3"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.002843",
-				"source":"2,3"
+				"source":"2,4"
 			}
 		],
 		"velocity":[
 			{
 				"value":"851.1",
 				"u_value":"km/s",
-				"source":"4"
+				"source":"5"
 			}
 		],
 		"photometry":[
@@ -157,7 +195,27 @@
 				"time":"59516.5",
 				"magnitude":"19.4",
 				"u_time":"MJD",
-				"source":"2,3"
+				"source":"2,4"
+			},
+			{
+				"time":"59532.05245",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.29",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"59558.47089",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.11",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"3"
 			}
 		]
 	}
